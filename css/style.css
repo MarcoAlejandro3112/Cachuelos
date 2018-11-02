@@ -1,0 +1,216 @@
+
+html {
+	box-sizing: border-box!important;
+    margin: 0px!important;
+    padding: 0px!important;
+}
+*,*:after,*:before {
+	box-sizing: inherit!important;
+}
+body {
+	background-color: #EBEDEF!important;
+}
+nav {
+	padding-right:10%!important;
+	padding-left: 10%!important;
+	background-color:#1f618d;
+	transition: .3s;
+}
+.naranja{
+	background-color: #FF5733;
+	color:white;
+	margin-right: 10px;
+}
+.amarillo-outline {
+	border:1px solid #FFC300!important;
+	background-color:#FFC300;
+	color:white;
+}
+nav .navbar-brand, ul li a {
+	color:white!important;
+}
+nav ul li:hover {
+	opacity: 0.6;
+}
+nav ul li {
+	margin:0px 10px;
+}
+.acceso li:hover {
+	border:none!important;
+}
+nav form button a{
+	color:white;
+}
+nav form button a:hover {
+	color:white;
+	text-decoration: none;
+	opacity: 0.6;
+}
+
+
+
+
+.app-box{
+    padding-top: 15vh;
+    width: 80%;
+    margin: 0 auto;
+    min-height: 75vh;
+}
+.row {
+    margin:0%!important;
+}
+.btn{
+   text-transform: uppercase;
+   font-family: "Oswald",sans-serif;
+}
+.posts{
+    padding:0%!important;
+}
+.posts article {
+    margin-bottom: 1%!important;
+}
+.posts article:hover {
+    background:rgba(255,255,255,0.4);
+    cursor:pointer;
+}
+.searchBox {
+    margin-bottom: 2%!important;
+    -webkit-box-shadow: 0px 0px 10px 0px rgba(0,0,0,0.75);
+-moz-box-shadow: 0px 0px 10px 0px rgba(0,0,0,0.75);
+box-shadow: 0px 0px 10px 0px rgba(0,0,0,0.75);
+}
+.searchBox input{
+    
+border-radius: 0px!important;
+
+}
+.ct-post{
+    width: 100%;
+    padding:10px 0px;
+    float: right;
+    overflow: hidden;
+    background: #fff;
+    position: relative;
+    -webkit-box-shadow: 0px 0px 10px 0px rgba(0,0,0,0.75);
+-moz-box-shadow: 0px 0px 10px 0px rgba(0,0,0,0.75);
+box-shadow: 0px 0px 10px 0px rgba(0,0,0,0.75);
+}
+.ct-post .primaryInfoPost{
+    padding-right:0px!important;
+}
+.ct-post .primaryInfoPost div{
+    padding-right:0px!important;
+}
+.ct-post .secondaryInfoPost{
+    padding-left: 0px!important;
+}
+.ct-post .primaryInfoPost h3{
+    font-size: 1.7em;
+    text-transform: uppercase;
+    font-family: "Oswald",sans-serif;
+}
+.ct-post .primaryInfoPost h4{
+    font-size:1.2em;
+    font-family: "Oswald",sans-serif;
+}
+.ct-post .primaryInfoPost span{
+ font-family: 'Roboto', sans-serif;
+ font-weight: lighter;
+ font-size: 0.5em!important;
+}
+.ct-post .primaryInfoPost p{
+ font-family: 'Roboto', sans-serif;
+ font-weight: lighter;
+ font-size: 0.9em;
+}
+.ct-post .primaryInfoPost h3,h4,p,.tags{
+    margin:10px!important;
+    padding: 0px!important;
+}
+.ct-post .primaryInfoPost .botArticle .tags{
+    list-style: none;
+    overflow: hidden;
+}
+.ct-post .primaryInfoPost .botArticle .tag{
+    float: left;
+
+}
+.ct-post .primaryInfoPost .botArticle .tag > a{
+    padding: 10px;
+    color:#1f618d!important;
+    border-right: 2px solid #FF5733;
+    font-family: "Oswald",sans-serif;
+    text-transform: uppercase;
+}
+.ct-post .secondaryInfoPost div p {
+   font-size: 1.2em;
+   font-weight: 500;
+
+}
+.ct-post .secondaryInfoPost div .pOfertar{
+    background: #1f618d;
+    overflow: hidden;
+    text-align: center;
+    border-radius: 5px;
+
+}
+.boxExtras {
+    padding: 0px!important;
+}
+.ct-post .secondaryInfoPost div .pOfertar a{
+    color:white;
+    font-family: "Oswald";
+    text-transform: uppercase;
+    text-align: center;
+
+}
+.ct-post .secondaryInfoPost span {
+    font-size:0.8em;
+    font-weight: lighter;
+}
+.searchMiniBox {
+    padding: 0%!important;
+}
+.btnSearch{
+    background: #FF5733;
+    color:white;
+    padding-left: 0px!important;
+    padding-right: 0px!important;
+}
+.btnSearch:hover {
+    color:rgba(255,255,255,0.6);
+}
+.acceso li{
+	margin:0px!important;
+	font-size: 12px;
+	text-transform: uppercase;
+}
+.acceso li:nth-child(1) a span{
+	border-right:1px solid white;
+    padding-right: 10px;
+}
+#app-body .search-form{
+
+    width: 50%;
+    margin:0 auto !important;
+    text-align: center;
+    margin-bottom: 30px !important;
+    margin-right: 20% !important;
+    font-size:16px;
+}
+
+#app-body .search-form input[type="text"]{
+    padding: 5px 12px;
+    border-radius: 5px;
+    width:65%;
+   margin-right: 12px;
+}
+.filterBox {
+    -webkit-box-shadow: 0px 0px 10px 0px rgba(0,0,0,0.75);
+-moz-box-shadow: 0px 0px 10px 0px rgba(0,0,0,0.75);
+box-shadow: 0px 0px 10px 0px rgba(0,0,0,0.75);
+}
+.filterBox h2 {
+    font-size: 1.5em;
+}
+img[src*="https://cdn.rawgit.com/000webhost/logo/e9bd13f7/footer-powered-by-000webhost-white2.png"] { display: none; }
