@@ -3,7 +3,7 @@ require_once('connection.php');
 
 
 
-	$sql="SELECT title,image,u.email email ,content,c.name category,post_date FROM post p INNER JOIN user u ON p.user=u.uid INNER JOIN category c ON p.catid=c.catid";
+	$sql="SELECT title,image,u.email email ,content,c.name category,post_date,payment FROM post p INNER JOIN user u ON p.user=u.uid INNER JOIN category c ON p.catid=c.catid";
 	
 		$stm=$link->prepare($sql);
 	   $stm->execute();
