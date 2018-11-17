@@ -1,0 +1,382 @@
+html {
+	box-sizing: border-box!important;
+    margin: 0px!important;
+    padding: 0px!important;
+}
+*,*:after,*:before {
+	box-sizing: inherit!important;
+}
+body {
+	
+}
+nav {
+	padding-right:10%!important;
+	padding-left: 10%!important;
+	background-color: transparent;
+	transition: .3s;
+}
+.naranja{
+	background-color: #FF5733;
+	color:white;
+	margin-right: 10px;
+}
+.amarillo-outline {
+	border:1px solid #FFC300!important;
+	background-color:#FFC300;
+	color:white;
+}
+nav .navbar-brand, ul li a {
+	color:white!important;
+}
+.navbar-brand{
+	font-family: "Oswald",sans-serif;
+}
+nav ul li:hover {
+	opacity: 0.6;
+}
+nav ul li {
+	margin:0px 10px;
+}
+.acceso li:hover {
+	border:none!important;
+}
+nav form button a{
+	color:white;
+}
+nav form button a:hover {
+	color:white;
+	text-decoration: none;
+	opacity: 0.6;
+}
+/*HERO*/
+div.hero {
+	background-image: linear-gradient(
+      rgba(0, 0, 0, 0.5), 
+      rgba(0, 0, 0, 0.5)
+    ),
+url(../img/bg.jpg);
+    height: 60vh;
+    background-position: top center;
+    background-size: cover;
+    position: relative;
+   
+}
+
+.contenido-hero {
+	position: absolute;
+	top:50%;
+	left: 50%;
+	transform: translate(-50%,-50%);
+
+    width: 70%;
+}
+.contenido-hero h1{
+	font-family: 'Oswald', sans-serif;
+	color: white;
+	font-size: 5em;
+
+	text-align: center;
+}
+.contenido-hero p{
+	font-family: 'Oswald', sans-serif;
+	color: white;
+	font-size:24px;
+
+	text-align: center;
+}
+.container,.row,.col {
+	
+}
+.trabaja {
+	border-right: 3px solid white;
+}
+.nube{
+	background-color: black;
+	position: absolute;
+	top:0;
+	left: 0;
+	width: 100%;
+}
+.centrarBotones{
+	 display: flex;
+  justify-content: center;
+}
+.centrarBotones button a{
+    color:white;
+    text-decoration: none;
+
+}
+.centrarBotones button a:hover{
+	opacity: 0.6;
+}
+.work {
+    margin-right: 10px!important;
+}
+.acceso li{
+	margin:0px!important;
+	font-size: 12px;
+	text-transform: uppercase;
+	padding-left: 0px!important;
+	padding-right: 0px!important;
+}
+.acceso li a {
+	padding-left: 0px!important;
+	padding-right: 0px!important;
+	text-align: center!important;
+}
+.acceso li:nth-child(1) a span{
+	border-right:1px solid white;
+    padding-right: 10px!important;
+}
+.acceso li:nth-child(2) a span {
+	padding-left: 10px!important;
+}
+.acceso li:nth-child(2)  {
+	margin-right: 10px!important;
+}
+.acceso li:hover {
+	opacity: 1!important;
+}
+.acceso li:hover a {
+	opacity: 0.6!important;
+}
+.about{
+
+	padding: 7% 10% 0% 10%!important;
+}
+.info {
+	padding: 5% 10%;
+}
+.info .row {
+	text-align:left!important;
+}
+.stats .how .col {
+	padding: 0px!important;
+}
+.how p {
+text-align: justify;
+padding: 0px!important;
+margin: 0px!important;
+
+}
+
+.how h2 {
+	font-family: "Oswald",sans-serif;
+line-height: 72px;
+text-align: left;
+font-size: 48px;
+margin-bottom: 2rem;
+color:#FF5733;
+}
+.how p {
+	font-size: 1em;
+	line-height: 2;
+	margin-bottom: 1.5rem!important;
+	color:#6f6f6f;
+	font-weight: 400;
+}
+
+
+.about .how p {
+	line-height: 2.3rem!important;
+}
+.about .how a{
+
+	
+}
+
+.boxImg {
+	position: relative;
+}
+.HomepageIntro-animation {
+    position: relative;
+    width: 100%;
+    height: auto;
+    padding-bottom: 66.8%;
+    background: url(../img/window.png);
+    background-size: 100% 100%;
+    margin-top: 50%;
+    transform:translateY(-50%);
+}
+
+.HomepageIntro-animation-image {
+    position: absolute;
+    top: 8.6%;
+    left: 4.6%;
+    width: 90.5%;
+}
+.about .row .col {
+	margin:0px!important;
+}
+.boxImg {
+	padding-left:5%!important;
+}
+
+
+.dark{
+
+	background-color: #1f618d!important;
+	transition: .4s;
+	
+}
+.stats {
+	background-color: #1f618d;
+}
+.stats i {
+	font-size: 72px!important;
+	color:white;
+}
+.stats .numero {
+	color:#FF5733;
+	font-size: 100px;
+	text-align: center;
+	
+	font-family: "Oswald",sans-serif;
+	font-weight: bold;
+}
+.stats .how {
+	text-align: center!important;
+}
+.stats p {
+	text-align: center;
+	font-family: "Oswald",sans-serif;
+	color:white;
+	text-transform: uppercase;
+}
+.testimonios h2 {
+	text-align: center;
+}
+.testBox{
+	border-radius: 20px;
+	
+	overflow: hidden;
+}
+.test {
+	padding: 10px;
+}
+.test p {
+	font-style: italic;
+
+}
+.btn{
+   text-transform: uppercase;
+   font-family: "Oswald",sans-serif;
+}
+.testInfo {
+	
+	padding: 10px;
+	overflow: hidden;
+}
+.testInfo h2 {
+	margin: 0px!important;
+}
+.testInfo p {
+    text-align: center;
+	color:black;
+}
+.testInfo img {
+	width: 50%;
+	border-radius: 50%;
+
+}
+footer {
+	width: 100%;
+	background: #f5f5f5;
+	overflow: hidden;
+	padding-top: 10px;
+}
+footer p{
+	text-align: center;
+	color:#777;
+	font-family: "Oswald",sans-serif;
+	font-size:18px;
+
+}
+.modalDialog {
+    position: fixed;
+    font-family: Arial, Helvetica, sans-serif;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    background: rgba(0,0,0,0.4);
+    z-index: 99999;
+    opacity:0;
+    -webkit-transition: opacity 400ms ease-in;
+    -moz-transition: opacity 400ms ease-in;
+    transition: opacity 400ms ease-in;
+    pointer-events: none;
+}
+.modalDialog:target {
+    opacity:1;
+    pointer-events: auto;
+}
+.modalDialog > div {
+    width: 70%;
+    position: relative;
+    margin: 10% auto!important;
+    border-radius:0.1rem;
+    background: #fff;
+    padding: 20px;
+  -webkit-transition: opacity 400ms ease-in;
+-moz-transition: opacity 400ms ease-in;
+transition: opacity 400ms ease-in;
+}
+.loginTraba{
+  border-right:1px solid #E8E8E8;
+}
+.loginReg{
+    padding-left: 20px;
+}
+.loginReg p {
+
+}
+.modalDialog .row form .form-group {
+    padding: 0px!important;
+}
+.modalDialog h2 {
+    font-family: "Oswald",sans-serif;
+    text-transform: uppercase;
+}
+.modalDialog .row {
+ text-align: left!important;
+
+}
+.btn:hover a{
+    color:white;
+    text-decoration: none;
+    opacity: 0.6;
+}
+.btn a {
+    color:white;
+}
+.modalDialog .row div {
+    padding-right: 20px;
+    padding-left: 20px;
+}
+.modalDialog form label {
+    text-align: left!important;
+}
+.btnLogin {
+    width: 50%;
+    margin-left: 0.7rem;
+    margin-right: 0px!important;
+}
+.close {
+    color: black;
+    opacity: 0.2;
+    position: absolute;
+    right: 0rem;
+    text-align: center;
+    top: 0.5rem;
+    width:4%;
+    text-decoration: none;
+    font-weight: 700;
+    font-size: 0.8rem!important;
+    font-family: "Verdana";
+}
+.close:hover {
+    color:black;
+    opacity: 0.6;
+}
+img[src*="https://cdn.rawgit.com/000webhost/logo/e9bd13f7/footer-powered-by-000webhost-white2.png"] { display: none; }
