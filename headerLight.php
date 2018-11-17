@@ -33,7 +33,7 @@
   <div class="row">
     <a href="#close" title="Close" class="close">X</a>
     <div class="col-6 loginTraba">
-    <form>
+    <form action="login.php">
       <h2>Acceso Trabajadores</h2>
       <div class="form-group">
         <label for="email">Email:</label>
@@ -58,7 +58,7 @@
   <div class="row">
     <a href="#close" title="Close" class="close">X</a>
     <div class="col-6 loginTraba">
-    <form>
+    <form action="login.php">
       <h2>Acceso Contratistas</h2>
       <div class="form-group">
         <label for="email">Email:</label>
