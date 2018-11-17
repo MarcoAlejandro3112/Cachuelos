@@ -20,25 +20,54 @@
 <body>
 	
 	<div class="cajitasForm cajitaDetails">
-		<form method="post" action="register.php">
+		<form method="post" action="register.php" onsubmit="return validar();">
 			<h1>Datos Principales</h1>
 			<div class="form-group">
 				<label for="email">Email:</label>
-			<input type="email" class="form-control" name="email" placeholder="ejemplo1234@gmail.com">
+			<input type="text" class="form-control" name="email" placeholder="ejemplo1234@gmail.com" id="email">
 			</div>
 			<div class="form-group">
 				<label for="password">Contraseña:</label>
-			<input type="password" class="form-control" name="pass" placeholder="Ingresa tu contraseña">
+			<input type="password" class="form-control" name="pass" placeholder="Ingresa tu contraseña" id="pass">
 			</div>
 			<div class="form-group">
 				<label for="passwordR">Repetir Contraseña:</label>
-			<input type="password" class="form-control" name="pass-confirm" placeholder="Reescribe tu contraseña">
+			<input type="password" class="form-control" name="pass-confirm" placeholder="Reescribe tu contraseña" id="repass">
 			</div>
+            <div class="alert alert-danger" id="alert" role="alert">
+            
+            </div>
 			<button type="submit" class="float-right btn work naranja">ENVIAR</button>
 		</form>
 	</div>
 	
-</div>
+<script>
+function validar(){
+    var exEmail = /\w+@\w+\.+[a-z]/;
+    var email,pass,repass;
+    email = document.getElementById("email").value;
+    pass = document.getElementById("pass").value;
+    repass = document.getElementById("repass").value;
+    var alerta = document.getElementById("alert");
+    if(email == "" || pass == "" || repass == "") {
+        alerta.className = "show alert alert-danger";
+        alerta.innerHTML = "Rellene todos los campos";
+        return false;
+    }else if(email.length > 64 || pass.length > 64 || repass.length > 64){
+        alerta.className = "show alert alert-danger"; 
+        alerta.innerHTML = "Los campos deben de tener como máximo 64 carácteres";
+        return false;
+    } else if(!exEmail.test(email)){
+        alerta.className = "show alert alert-danger"; 
+        alerta.innerHTML = "Email Inválido | ejemplo: correocorrecto@gmail.com";
+        return false;
+    } else if(pass != repass){
+        alerta.className = "show alert alert-danger";
+        alerta.innerHTML = "Las contraseñas no coinciden";
+        return false;
+    }
+} 
+</script>
 
 <div style='text-align: right;position: fixed;z-index:9999999;bottom: 0; width: 100%;cursor: pointer;line-height: 0;display:block !important;'><a title="Hosted on free web hosting 000webhost.com. Host your own website for FREE." target="_blank" href="https://www.000webhost.com/?utm_source=000webhostapp&amp;utm_campaign=000_logo&amp;utm_medium=website_cachuelos&amp;utm_content=footer_img"><img src="https://cdn.rawgit.com/000webhost/logo/e9bd13f7/footer-powered-by-000webhost-white2.png"  alt="www.000webhost.com"></a></div></body>
 </html>
