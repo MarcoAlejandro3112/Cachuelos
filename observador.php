@@ -1,6 +1,6 @@
 <?php
 if(!isset($_SESSION)){
     
-    header('Location:index.html');
+    header('Location:index.html#openModal');
     
 }
