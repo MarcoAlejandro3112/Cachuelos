@@ -1,3 +1,4 @@
+<div class="containerNav">
 <nav class="navbar navbar-expand-lg navbar-light fixed-top" id="nav">
   <a class="navbar-brand" href="index.php">CACHUELOS</a>
   <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
@@ -78,4 +79,5 @@
       <button type="submit" class="btn work naranja"><a href="#">REGISTRAR</a></button>
     </div>
   </div>
+</div>
 </div>
