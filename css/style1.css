@@ -23,8 +23,8 @@ html {
 /*HEADER====================================================================================================================================
 ============================================================================================================================================*/
 nav {
-	padding-left: 15%!important;
-	padding-right: 15%!important;
+	padding-left: 10%!important;
+	padding-right: 10%!important;
 	background-color: transparent;
 	transition: .3s;}
 nav .navbar-brand, ul li a {
@@ -53,6 +53,34 @@ nav form button a:hover {
 nav form button{
 	margin-right: 0px!important;
 }
+.acceso li{
+	margin:0px!important;
+	font-size: 12px;
+	text-transform: uppercase;
+	padding-left: 0px!important;
+	padding-right: 0px!important;
+}
+.acceso li a {
+	padding-left: 0px!important;
+	padding-right: 0px!important;
+	text-align: center!important;
+}
+.acceso li:nth-child(1) a span{
+	border-right:1px solid white;
+    padding-right: 10px!important;
+}
+.acceso li:nth-child(2) a span {
+	padding-left: 10px!important;
+}
+.acceso li:nth-child(2)  {
+	margin-right: 10px!important;
+}
+.acceso li:hover {
+	opacity: 1!important;
+}
+.acceso li:hover a {
+	opacity: 0.6!important;
+}
 /*HERO=====================================================================================================================================
 ===========================================================================================================================================*/
 div.hero {
@@ -61,7 +89,7 @@ div.hero {
       rgba(0, 0, 0, 0.5)
     ),
 url(../img/bg.jpg);
-    height: 60vh;
+    height: 70vh;
     background-position: top center;
     background-size: cover;
     position: relative;
@@ -71,7 +99,7 @@ url(../img/bg.jpg);
 
 }
 .contenido-hero {
-    width: 70%;
+    width: 80%;
         display: flex;
 	flex-flow: column wrap;
 	justify-content: center;
@@ -120,46 +148,42 @@ url(../img/bg.jpg);
 .work {
     margin-right: 10px!important;
 }
-.acceso li{
-	margin:0px!important;
-	font-size: 12px;
-	text-transform: uppercase;
-	padding-left: 0px!important;
-	padding-right: 0px!important;
-}
-.acceso li a {
-	padding-left: 0px!important;
-	padding-right: 0px!important;
-	text-align: center!important;
-}
-.acceso li:nth-child(1) a span{
-	border-right:1px solid white;
-    padding-right: 10px!important;
-}
-.acceso li:nth-child(2) a span {
-	padding-left: 10px!important;
-}
-.acceso li:nth-child(2)  {
-	margin-right: 10px!important;
-}
-.acceso li:hover {
-	opacity: 1!important;
-}
-.acceso li:hover a {
-	opacity: 0.6!important;
-}
+/*ACERCA DE=================================================================================================================================
+============================================================================================================================================*/
 .info{
-
-	padding: 5% 15%;
+	width: 100%;
+	display: flex;
+	justify-content: center;
 }
-
+.how{
+    width: 80%;
+    display: flex;
+    flex-flow: row no-wrap;
+    justify-content: space-between;
+    align-items: center;
+}
+.row {
+	padding:5rem 0rem;
+}
 .how p {
 text-align: justify;
-padding: 0px!important;
-margin: 0px!important;
 
 }
 
+.aboutCol {
+	margin-right: 5rem!important;
+
+	height: 100%;
+	display: flex;
+	flex-flow: row wrap;
+	justify-content: center;
+	align-items: center;
+
+
+}
+.col {
+	padding: 0px!important;
+}
 .how h2 {
 	font-family: "Oswald",sans-serif;
 line-height: 72px;
@@ -178,12 +202,33 @@ color:#FF5733;
 	text-align: left!important;
 }
 .boxImg {
-	padding-left:5%!important;
+	height: 100%;
+	display: flex;
+	flex-flow: row wrap;
+	justify-content: center;
+	align-items: center;
+
 }
 .boxImg img {
 	width: 100%;
 }
+.cajaVideo video {
 
+	width: 90%!important;
+	margin-top: 2rem;
+	margin-bottom: 0.4rem;
+}
+.cajaVideo {
+	position: relative;
+    width: 100%;
+    background: url(../img/window.png);
+    background-size: 100% 100%;
+    height: auto;
+    display: flex;
+    flex-flow: row no-wrap;
+    justify-content: center;
+    align-items: center;
+}
 .dark{
 
 	background-color: #1f618d!important;

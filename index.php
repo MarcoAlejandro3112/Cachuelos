@@ -31,7 +31,7 @@
 	</div>
 <div class="info about">
   <div class="row how">
-    <div class="col">
+    <div class="col aboutCol">
       <div class="infoContent">
       <h2> ¿Cómo Funciona?</h2>
       <p>Es sencillo. Simplemente publica un cachuelo que necesitas culminar y recibe ofertas por parte de trabajadores en cuestión de minutos.</p>
@@ -40,7 +40,7 @@
 
 <p>Si quieres trabajar solo inscríbete y busca cachuelos que se adecuen a ti. Es sencillo y rápido sin necesidad de estudios ni experiencia profesional.</p>
   <p>Puedes trabajar localmente u online, el pago no se efectuará hasta completar el trabajo y que el cliente esté 100% satisfecho.</p>
- <p>Si tiene cualquier duda sobre como funciona cachuelos no dude en <a href="contacto.php">contactarnos.</a></p>
+
 
  
      </div>
@@ -49,7 +49,7 @@
      
     </div>
     <div class="col boxImg">
-                    <div class="HomepageIntro-animation">
+                    <div class="HomepageIntro-animation cajaVideo">
                         <video muted autoplay loop class="HomepageIntro-animation-image" >
                             <source src="https://www.f-cdn.com/assets/video/homepage/homepage-de21e73d.mp4" type="video/mp4">
                             <img src="https://www.f-cdn.com/assets/img/homepage/homepage-cf6581d5.png" alt="cómo conseguir tu trabajo hecho en freelancer!" />
