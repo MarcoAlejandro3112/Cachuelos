@@ -1,10 +1,10 @@
 <?php
 /**
- * Nota:
- * Los usuarios sin contenido en 'user_details' no pueden loguearse
+ * Notas:
+ * Los usuarios sin contenido en 'user_details' no pueden loguearse.
+ * Para mantener las sesiones abiertas en android se requiere persistencia de datos
  **/
 require_once('connection.php');
-require_once('observador.php');
 $status=array("status"=>"error","action"=>"login","stat"=>false);
 if(isset($_REQUEST['email']) && !empty($_REQUEST['email']) && isset($_REQUEST['pass']) 
 && !empty($_REQUEST['pass']) ){
@@ -35,16 +35,7 @@ if(isset($_REQUEST['email']) && !empty($_REQUEST['email']) && isset($_REQUEST['p
 
         if($stm->rowCount()){
             $status=array("status"=>"succes","action"=>"login","stat"=>true);
-                      //inicio de sesión
-                       session_start();
-
-                       $_SESSION['user']=$result['name']." ".$result["surname"];
-                       $_SESSION['phone']=$result['phone'];
-                       $_SESSION['email']=$result['email'];
-                       $_SESSION['description']=$result['description'];
-                       $_SESSION['document']=$result['document'];
-
-                    //fin inicio de sesión
+                    
             
                     array_push($user_data,array("email"=>$result['email'], "name"=>$result['name'], 
                     "surname"=>$result['surname'],"phone"=>$result['phone'],"description"=>$result['description'],

@@ -57,6 +57,7 @@ CREATE TABLE `post` (
   `post_date` date DEFAULT NULL,
   `duration` int(11) DEFAULT '15',
   `title` varchar(128) COLLATE utf8_unicode_ci DEFAULT NULL,
+  `location` varchar(64),
   `payment` int(11) DEFAULT '0',
   `tags` varchar(128) COLLATE utf8_unicode_ci DEFAULT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8 COLLATE=utf8_unicode_ci;
@@ -141,8 +142,8 @@ CREATE TABLE `user_details` (
 -- Volcado de datos para la tabla `user_details`
 --
 
-INSERT INTO `user_details` (`udid`, `uid`, `name`, `surname`, `phone`, `description`, `tyid`, `document`, `rating`) VALUES
-(1, 2, 'Elon', 'Reeve Musk', '+1 234567890', 'Físico, inversor, magnate', 1, '09876543', NULL);
+INSERT INTO `user_details` (`udid`, `uid`, `name`, `surname`, `phone`, `description`, `tyid`, `document`, `country`) VALUES
+(1, 2, 'Elon', 'Reeve Musk', '+1 234567890', 'Físico, inversor, magnate', 1, '09876543','United States');
 
 -- --------------------------------------------------------
 
