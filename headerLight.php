@@ -15,17 +15,20 @@
       <li class="nav-item">
         <a class="nav-link " href="contacto.php">Contacto</a>
       </li>
-    </ul>
-    <form class="form-inline my-2 my-lg-0">
-      <ul class="navbar-nav mr-auto acceso">
-        <li class="nav-item">
-        <a class="nav-link" href="#openModal"><span>Acceso Trabajadores</span></a>
+      <li class="nav-item"> 
+        <a class="nav-link" href="register.html">Registrarse</a>
       </li>
-      <li class="nav-item">
-        <a class="nav-link " href="#openModal2"><span>Acceso Contratistas</span></a>
+    </ul>
+    <form class="form-inline my-2 my-lg-0" id="formAcceso">
+      <ul class="navbar-nav mr-auto acceso">
+        <li class="nav-item" id="liAcceso">
+        <a class="nav-link" href="#openModal"><span id="acceso">Acceso Trabajadores</span></a>
+      </li>
+      <li class="nav-item" id="liAcceso">
+        <a class="nav-link" href="#openModal2"><span id="acceso">Acceso Contratistas</span></a>
       </li>
       </ul>
-      <button class="btn  my-2 my-sm-0 naranja" type="submit"><a href="register.html">Registrarse</a></button>
+      <button class="btn my-2 my-sm-0 naranja hide" type="submit"><a href="register.html">Registrarse</a></button>
       
     </form>
   </div>

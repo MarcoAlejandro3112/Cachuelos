@@ -14,6 +14,7 @@
   <script type="text/javascript" src="js/app.js"></script>
 	<link rel="stylesheet" type="text/css" href="css/style1.css">
 	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+  
 	<link href="https://fonts.googleapis.com/css?family=Oswald" rel="stylesheet">
   <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.4.1/css/all.css" integrity="sha384-5sAR7xN1Nv6T6+dT2mhtzEpVJvfS3NScPQTrOxhwjIuvcA67KV2R5Jz6kr4abQsz" crossorigin="anonymous">
 </head>
@@ -31,7 +32,7 @@
 	</div>
 <div class="info about">
   <div class="row how">
-    <div class="col aboutCol">
+    <div class="aboutCol" id="col">
       <div class="infoContent">
       <h2> ¿Cómo Funciona?</h2>
       <p>Es sencillo. Simplemente publica un cachuelo que necesitas culminar y recibe ofertas por parte de trabajadores en cuestión de minutos.</p>
@@ -48,7 +49,7 @@
      
      
     </div>
-    <div class="col boxImg">
+    <div class="boxImg" id="col">
                     <div class="HomepageIntro-animation cajaVideo">
                         <video muted autoplay loop class="HomepageIntro-animation-image" >
                             <source src="https://www.f-cdn.com/assets/video/homepage/homepage-de21e73d.mp4" type="video/mp4">
@@ -63,20 +64,20 @@
 </div>
 <div class="info stats">
   <div class="row how">
-    <div class="col">
+    <div class="">
       <i class="fas fa-users"></i>
        <p class="numero"> 0
      </p><p>Usuarios</p>
      
     </div>
     
-    <div class="col">
+    <div class="">
       <i class="fas fa-archive"></i>
        <p class="numero"> 0</p>
      <p>Trabajos Completados</p>
     </div>
 
-    <div class="col">
+    <div class="">
       <i class="far fa-money-bill-alt"></i>
        <p class="numero">$0</p>
      <p>Dinero Generado</p>
@@ -85,7 +86,7 @@
 </div>
 <div class="info testimonios">
   <div class="row how">
-    <div class="col">
+    <div class="">
       <div class="testBox">
         <div  class="testInfo"> 
          <img src="img/elon.jpeg" align="left"> 
@@ -102,7 +103,7 @@
          
       </div>
     </div>
-    <div class="col">
+    <div class="">
       <div class="testBox">
         <div  class="testInfo"> 
          <img src="img/elon.jpeg" align="left"> 
@@ -120,7 +121,7 @@
       </div>
     </div>
     
-    <div class="col">
+    <div class="">
       <div class="testBox">
         <div  class="testInfo"> 
          <img src="img/elon.jpeg" align="left"> 
