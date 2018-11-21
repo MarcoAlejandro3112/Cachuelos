@@ -51,11 +51,6 @@
       <button type="submit" class="btn btnLogin work naranja"><a href="#">ENVIAR</a></button>
     </form>
     </div>
-    <div class="col-6 loginReg">
-      <h2>Regístrate gratis</h2>
-      <p>Regístrate con nosotros para poder acceder a las ofertas de empleo que más te interesen. Una vez creada tu cuenta podrás solicitar los empleos y editar tu perfil.</p>
-      <button type="submit" class="btn work naranja"><a href="#">Registrar</a></button>
-    </div>
   </div>
 </div>
 <div id="openModal2" class="modalDialog">
@@ -76,11 +71,7 @@
       <button type="submit" class="btn btnLogin work naranja"><a href="#">ENVIAR</a></button>
     </form>
     </div>
-    <div class="col-6 loginReg">
-      <h2>Regístrate gratis</h2>
-      <p>Regístrate con nosotros para poder acceder a las ofertas de empleo que más te interesen. Una vez creada tu cuenta podrás solicitar los empleos y editar tu perfil.</p>
-      <button type="submit" class="btn work naranja"><a href="#">REGISTRAR</a></button>
-    </div>
+
   </div>
 </div>
 </div>
