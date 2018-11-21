@@ -31,7 +31,7 @@
 	</div>
 	</div>
 <div class="info about">
-  <div class="row how">
+  <div class="row how" id="rowAbout">
     <div class="aboutCol" id="col">
       <div class="infoContent">
       <h2> ¿Cómo Funciona?</h2>
@@ -85,11 +85,14 @@
   </div>
 </div>
 <div class="info testimonios">
-  <div class="row how">
+  <div class="row how" id="rowTest">
     <div class="">
       <div class="testBox">
+        <div class="testImg"> 
+          <img src="img/elon.jpeg" align="left"> 
+        </div>
+      <div class="centrarDiv">  
         <div  class="testInfo"> 
-         <img src="img/elon.jpeg" align="left"> 
              <h2>Pedro Torres</h2>
              <p>Lorem ipsum dolor sit amet</p>
          </div>
@@ -100,13 +103,16 @@
             quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
             consequat.<span>"</span>   </p>
          </div>
-         
+         </div>
       </div>
     </div>
     <div class="">
       <div class="testBox">
+        <div class="testImg"> 
+          <img src="img/elon.jpeg" align="left"> 
+        </div>
+        <div class="centrarDiv">  
         <div  class="testInfo"> 
-         <img src="img/elon.jpeg" align="left"> 
              <h2>Pedro Torres</h2>
              <p>Lorem ipsum dolor sit amet</p>
          </div>
@@ -117,29 +123,30 @@
             quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
             consequat.<span>"</span>   </p>
          </div>
-         
+        </div>
       </div>
     </div>
     
-    <div class="">
+     <div class="">
       <div class="testBox">
+        <div class="testImg"> 
+          <img src="img/elon.jpeg" align="left"> 
+        </div>
+        <div class="centrarDiv">  
         <div  class="testInfo"> 
-         <img src="img/elon.jpeg" align="left"> 
              <h2>Pedro Torres</h2>
              <p>Lorem ipsum dolor sit amet</p>
          </div>
 
-      <div>
          <div class="test"> 
             <p><span>"</span>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
             tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
             quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
             consequat.<span>"</span>   </p>
          </div>
-         
+         </div>
       </div>
     </div>
-  </div>
   </div>
 </div>
 <div id="footer"></div>

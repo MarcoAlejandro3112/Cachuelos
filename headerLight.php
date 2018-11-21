@@ -16,7 +16,7 @@
         <a class="nav-link " href="contacto.php">Contacto</a>
       </li>
       <li class="nav-item"> 
-        <a class="nav-link" href="register.html">Registrarse</a>
+        <a class="nav-link hide2" href="register.html">Registrarse</a>
       </li>
     </ul>
     <form class="form-inline my-2 my-lg-0" id="formAcceso">

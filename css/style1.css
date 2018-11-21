@@ -120,9 +120,7 @@ url(../img/bg.jpg);
 
 	text-align: center;
 }
-.container,.row,.col {
-	text-align: center;
-}
+
 .trabaja {
 	border-right: 3px solid white;
 }
@@ -291,7 +289,7 @@ color:#FF5733;
     text-align: center;
 	color:black;
 }
-.testInfo img {
+.testImg img {
 	width: 50%;
 	border-radius: 50%;
 
@@ -366,7 +364,7 @@ transition: opacity 400ms ease-in;
     text-transform: uppercase;
 }
 .modalDialog .row {
- text-align: left!important;
+ text-align: left;
 
 }
 .btn:hover a{
@@ -518,23 +516,251 @@ img[src*="https://cdn.rawgit.com/000webhost/logo/e9bd13f7/footer-powered-by-000w
  .testBox div {
  	padding: 0px!important;
  }
- .testInfo img {
+ .testImg img {
  	width:70%;
  }
  .testimonios .row {
  	padding-bottom: 0px!important;
  }
+ .loginReg{
+ 	display: none;
+ }
+ .loginTraba{
+ 	display: flex;
+ 	flex-flow:column wrap; 
+ 	justify-content: center;
+ 	max-width: 100%!important;
+ 	border:none;
+ 	padding: 0px!important;
+ 	flex:none!important;
+ }
+ .loginTraba h2{
+ 	text-align: center;
+ }
+ .loginTraba form a{
+ 	text-align: center!important;
+    display: flex;
+    justify-content: center;
+ }
+ .loginTraba form button {
+ 	margin-left: 0px;
+   width: 100%;
+   margin-top:1rem;
+ }
+ #openModal div.row a.close{
+ 	position: absolute;
+ 	top:0.5rem;
+ 	right: 0.5rem;
+ }
+ .stats .row div i {
+ 	display: flex;
+ 	justify-content: center;
+ }
+ .testimonios .row div div{
+ 	width: 100%;
+ 	display: flex;
+ 	flex-flow: row wrap;
+ 	justify-content: center;
+ } 
+
 }
 @media (min-width: 768px) {
-body{
- 	background: red!important;
+ body{
  }
+  .testimonios .row div div{
+ 	width:initial;
+  display: initial;
+ 	flex-flow: none;
+ 	align-items: none;
+ 	justify-content:none;
+ } 
+ .contenido-hero h1{
+    font-size: 3.5em;
  }
+ .contenido-hero p {
+ 	font-size: 1.2em;
+ }
+ .centrarBotones{
+ 	display: flex;
+ 	flex-flow: row wrap;
+ 	align-content: center;
+ 	justify-content: center;
+ }
+ .centrarBotones button {
+ 	width: auto;
+ 	margin-bottom:0px!important;
+ }
+ .centrarBotones button:nth-child(1){
+ 	margin-right: 1rem!important;
+ }
+ .stats .how{
+ 	display: flex;
+ 	flex-flow: row wrap!important;
+ }
+ .stats .how div {
+ 	width: 33.333333%;
+ 	border:none!important;
+ 	margin-top: 2rem;
+ }
+ .stats .how div:nth-child(1){
+ 	margin-top: 2rem;
+ }
+ .stats .how div:nth-child(1) i{
+ 	padding-top: 0px;
+ }
+
+ .testInfo {
+ 	display: block;
+ }
+ .testImg {
+ 	width: 30%!important;
+ }
+ .testImg img {
+ 	width: 90%!important;
+ 	margin-right: 1rem;
+ }
+ .testimonios .how > div{
+ 	margin-bottom: 2rem;
+ }
+ .testInfo > h2{
+ 	text-align:left!important;
+ 	line-height:2rem!important;
+ }
+ .testInfo > p{
+ 	text-align: left!important;
+
+ }
+ .test p {
+ 	font-size: 0.8rem;
+ 	margin-bottom: 0px!important;
+ }
+ .testBox {
+ 	display: flex!important;
+ 	flex-flow: row wrap!important;
+ 	align-items: center!important;
+ 	justify-content: center!important;
+ }
+
+ .centrarDiv {
+ 	width: 70%!important;
+ 	display: flex;
+ 	flex-flow: column wrap;  
+ 	align-content: center;
+ 	justify-content: center;
+ }
+
+}
 @media (min-width: 1024px) {
-   body{
-   	background: purple!important;
+	nav {
+		padding-left: 5%!important;
+		padding-right: 5%!important;
+		background: transparent;
+	}
+	.hide2{
+		display: none!important;
+	}
+   nav ul li {
+   	margin:0px 5px!important;
    }
+   nav ul li a{
+    font-size: 0.9rem;
+   }
+   .acceso li {
+   	margin:0px 10px!important;
+   }
+   .acceso li a span{
+   	text-transform: uppercase;
+   	font-size: 0.6rem;
+   }
+   .acceso li:nth-child(1) a span{
+   	border-right:1px solid white!important;
+   	padding-right: 10px!important;
+   }
+   .hide {
+   	display: inline-block!important;
+   }
+   nav form button a{
+       text-transform: uppercase!important;
+   }
+   #liAcceso:nth-child(1){
+   	margin-left: 0px!important;
+   }
+   #acceso{
+   	padding-right: 10px!important;
+   }
+   .contenido-hero h1{
+   	font-size:4.5em;
+   }
+   .how #col {
+   	width: 50%!important;
+   }
+   #rowAbout{
+   	display: flex;
+   	flex-flow: row wrap;
+   }
+   .row {
+   	padding-top:2rem!important;
+   	padding-bottom: 2rem!important;
+   }
+   .aboutCol{
+   	padding-right:2rem!important;
+   }
+
  }
 @media (min-width: 1200px) {
 
+     nav{
+     	padding-left:10%!important;
+     	padding-right: 10%!important;
+     }
+     .hero {
+     	height:80vh!important;
+     }
+     nav ul li{
+     	margin: 0px 10px!important;
+     }
+     nav ul li a{
+     	font-size: 1rem;
+     }
+     .acceso li a span{
+     	font-size:0.7rem;
+     }
+     nav a,span {
+     	font-size: 1rem;
+     }
+     #rowTest {
+     	display: flex!important;
+     	flex-direction: row!important;
+     	flex-wrap: nowrap;
+     }
+     .testBox{
+     	display: flex;
+     	flex-flow: column nowrap!important;
+     	align-content: center;
+     }
+     .testImg{
+     	width: 80%!important;
+     	display: flex!important;
+     	flex-flow: row wrap!important;
+     	justify-content: center!important;
+     	align-items: center!important;
+     }
+     .centrarDiv {
+     	width:80%!important;
+     }
+     .testInfo h2{
+     	text-align: center!important;
+     }
+     .testInfo p {
+     	text-align: center!important;
+     }
+     .centrarDiv{
+     	margin-top: 1rem!important;
+     }
+     .testImg img{
+     	display: flex;
+     	justify-content: center!important;
+     	width: 50%!important;
+     	float: none!important;
+     }
  }
