@@ -132,3 +132,6 @@ footer p{
 .cajaContratar{
     padding:1% 2%!important;
 }
+div.alert{
+	display: none;
+}
