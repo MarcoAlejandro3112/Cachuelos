@@ -49,3 +49,7 @@ for($i=0;$i<count($exstr);$i++){
 }
 
 echo json_encode($exstr);
+
+session_start();
+
+echo $_SESSION['user'];

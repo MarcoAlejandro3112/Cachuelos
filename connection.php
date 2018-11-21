@@ -2,10 +2,12 @@
 header('Access-Control-Allow-Origin:*');
   try{  
   	  $host="localhost";
-      $suser="id7557222_cachuelos";
-      $spass="123456";
+      $suser="root";
+      $spass="";
       $db="id7557222_cachuelos";
-        $link = new PDO('mysql:host='.$host.';dbname='.$db, $suser, $spass);
+        $link = new PDO('mysql:host='.$host.';dbname='.$db, $suser, $spass,array(
+    PDO::ATTR_ERRMODE => PDO::ERRMODE_EXCEPTION,
+    PDO::MYSQL_ATTR_INIT_COMMAND => "SET NAMES utf8"));
  
   }catch (PDOException $e) {
     print "Error!: " . $e->getMessage() . "<br/>";
