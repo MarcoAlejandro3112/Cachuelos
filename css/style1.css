@@ -705,7 +705,9 @@ img[src*="https://cdn.rawgit.com/000webhost/logo/e9bd13f7/footer-powered-by-000w
    .aboutCol{
    	padding-right:2rem!important;
    }
-
+.modalDialog > div {
+     	width: 50%;
+     }
  }
 @media (min-width: 1200px) {
 
@@ -763,4 +765,5 @@ img[src*="https://cdn.rawgit.com/000webhost/logo/e9bd13f7/footer-powered-by-000w
      	width: 50%!important;
      	float: none!important;
      }
+     
  }
