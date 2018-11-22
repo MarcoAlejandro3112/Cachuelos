@@ -1,12 +1,15 @@
 <?php
 require_once('connection.php');
+
 $status=array('status'=>'error','context'=>'post','stat'=>false);
-if(isset($_REQUEST['user']) && !empty($_REQUEST('user')) && isset($_REQUEST['pass']) && !empty($_REQUEST['pass']) ){
-	$sql="INSERT INTO post (user,title,content,image,catid,post_date)".
-	"VALUES()";
+if(isset($_SESSION['user']) && !empty($_SESSION('user'))&& isset($_REQUEST['content']) && !empty($_REQUEST['content'])
+ && isset($_REQUEST['title']) && !empty($_REQUEST['title']) && isset($_REQUEST['payment']) && !empty($_REQUEST['payment'])  ){
+	$sql="INSERT INTO post (user,title,content,image,post_date,payment)".
+	"VALUES(:user,:content,:img,:date,:pay)";
 	
 		$stm=$link->prepare($sql);
-	   $stm->execute();
+       $stm->execute(array(":user"=>$_SESSION['user'],":content"=>$_REQUEST['content'],":img"=>null,
+                            ":date"=>date('Y-m-d'),":pay"=>$_REQUEST['payment']));
 	   
         $result=$stm->fetchAll();
         
