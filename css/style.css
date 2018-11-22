@@ -436,5 +436,174 @@ footer p{
     color:#777;
     font-family: "Oswald",sans-serif;
     font-size:18px;
+}
+/*RESPONSIVE DESING===========================================================================================================================
+=============================================================================================================================================*/
+@media(min-width: 320px) {
+ nav{
+    background-color:#1f618d;
+ }
+ .navbar-toggler {
+    border-color: rgb(255,255,255)!important;
+ }
+ .navbar-toggler span {
+  background-image: url("data:image/svg+xml;charset=utf8,%3Csvg viewBox='0 0 32 32' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath stroke='rgba(255,255,255,1)' stroke-width='3' stroke-linecap='round' stroke-miterlimit='10' d='M4 8h24M4 16h24M4 24h24'/%3E%3C/svg%3E")!important;
+ }
+#formAcceso{
+    margin-top:0px!important;
+ }
+ nav a,span{
+    font-size: 12px;
+    text-transform: none;
+ }
+ nav ul li{
+    margin: 0px!important;
+ }
+ #liAcceso{
+    margin-right: 0px!important;
+ }
+#formAcceso ul {
+    margin-right: 0px!important;
+}
+ nav form .acceso li a span{
+    margin: 0px!important;
+    border:none!important;
+ }
+ #acceso{
+    padding:0px!important;
+ }
+ .hide {
+    display: none!important;
+ }
+ .loginReg{
+    display: none;
+ }
+ .loginTraba{
+    display: flex;
+    flex-flow:column wrap; 
+    justify-content: center;
+    max-width: 100%!important;
+    border:none;
+    padding: 0px!important;
+    flex:none!important;
+ }
+ .loginTraba h2{
+    text-align: center;
+ }
+ .loginTraba form a{
+    text-align: center!important;
+    display: flex;
+    justify-content: center;
+ }
+ .loginTraba form button {
+    margin-left: 0px;
+   width: 100%;
+   margin-top:1rem;
+ }
+ #openModal div.row a.close{
+    position: absolute;
+    top:0.5rem;
+    right: 0.5rem;
+ }
+ #app-filter{
+    display: none;
+ }
+ #app-body{
+    padding-left: 0px!important;
+    max-width: 100%;
+    flex:0 0 100%;
+ }
+ .searchBox div:nth-child(1){
+    max-width: 75%!important;
+ }
+ .searchBox div:nth-child(2){
+    max-width: 25%!important;
+    flex:0 0 25%!important;
+ }
+ .primaryInfoPost{
+    max-width: 100%!important;
+    flex: 0 0 100%!important;
+    padding-left: 0px!important;
+    padding-right:0px!important;
+ }
+ .secondaryInfoPost {
+    max-width: 100%!important;
+    flex: 0 0 100%!important;
+    padding-right: 10px!important;
+    padding-left: 10px!important;
+ }
+  .primaryInfoPost div{
+    
+  }
+}
+@media (min-width: 768px) {
+ body{
+ }
+  
 
 }
+@media (min-width: 1024px) {
+    .navbar-expand-lg .navbar-nav .nav-link {
+    padding-right: 0rem!important;
+    padding-left: 0rem!important;
+}
+    nav {
+        padding-left: 5%!important;
+        padding-right: 5%!important;
+    }
+    .hide2{
+        display: none!important;
+    }
+   nav ul li {
+    margin:0px 5px!important;
+   }
+   nav ul li a{
+    font-size: 0.9rem;
+   }
+   .acceso li a span{
+    text-transform: uppercase;
+    font-size: 0.6rem;
+   }
+   .acceso li:nth-child(1) a span{
+    border-right:1px solid white!important;
+    padding-right: 10px!important;
+   }
+   .hide {
+    display: initial!important;
+   }
+   nav form button a{
+       text-transform: uppercase!important;
+   }
+   #liAcceso:nth-child(1){
+    margin-left: 0px!important;
+   }
+   #acceso{
+    padding-right: 10px!important;
+   }
+   .modalDialog > div {
+        width: 50%;
+     }
+     #acceso{
+        padding-left: 10px!important;
+     }
+ }
+@media (min-width: 1200px) {
+
+     nav{
+        padding-left:10%!important;
+        padding-right: 10%!important;
+     }
+     nav ul li{
+        margin: 0px 10px!important;
+     }
+     nav ul li a{
+        font-size: 1rem;
+     }
+     .acceso li a span{
+        font-size:0.8rem;
+     }
+     nav a,span {
+        font-size: 1rem;
+     }
+     
+ }

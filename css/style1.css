@@ -725,7 +725,7 @@ img[src*="https://cdn.rawgit.com/000webhost/logo/e9bd13f7/footer-powered-by-000w
      	font-size: 1rem;
      }
      .acceso li a span{
-     	font-size:0.7rem;
+     	font-size:0.8rem;
      }
      nav a,span {
      	font-size: 1rem;
@@ -765,5 +765,7 @@ img[src*="https://cdn.rawgit.com/000webhost/logo/e9bd13f7/footer-powered-by-000w
      	width: 50%!important;
      	float: none!important;
      }
-     
+     .infoContent h2 {
+      margin-bottom: 0px!important;
+     }
  }

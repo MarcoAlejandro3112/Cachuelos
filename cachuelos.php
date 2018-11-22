@@ -82,7 +82,7 @@
         </form>
         <div class="container  withoutPd">
           <div class="row withoutPd">
-            <div class="col-6 withoutPd">
+            <div class="col-6 withoutPd hide">
               <div class="dropdown">
   <button class="btn btn-secondary dropdown-toggle" type="button" id="dropdownMenu2" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
     Ordenar
@@ -97,7 +97,7 @@
 </div>
             </div>
             
-            <div class="col-6 withoutPd">
+            <div class="col-6 withoutPd hide">
               <nav class="navPag" aria-label="Page navigation example">
   <ul class="pagination justify-content-end">
     
@@ -127,7 +127,7 @@
             </div>
           </div>
           <div class="row"> 
-              <div class="col-12 withoutPd" id="numBoxPost"> 
+              <div class="hide col-12 withoutPd" id="numBoxPost"> 
                 
                <span><b>   06 </b></span><span> cachuelos encontrados ,  
                precios en US</span>

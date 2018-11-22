@@ -1,4 +1,5 @@
-<nav class="navbar navbar-expand-lg fixed-top" id="nav">
+<div class="containerNav">
+<nav class="navbar navbar-expand-lg navbar-light fixed-top" id="nav">
   <a class="navbar-brand" href="index.php">CACHUELOS</a>
   <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
     <span class="navbar-toggler-icon"></span>
@@ -14,17 +15,20 @@
       <li class="nav-item">
         <a class="nav-link " href="contacto.php">Contacto</a>
       </li>
-    </ul>
-    <form class="form-inline my-2 my-lg-0">
-      <ul class="navbar-nav mr-auto acceso">
-        <li class="nav-item">
-        <a class="nav-link" href="#openModal"><span>Acceso Trabajadores</span></a>
+      <li class="nav-item"> 
+        <a class="nav-link hide2" href="register.html">Registrarse</a>
       </li>
-      <li class="nav-item">
-        <a class="nav-link " href="#openModal2"><span>Acceso Contratistas</span></a>
+    </ul>
+    <form class="form-inline my-2 my-lg-0" id="formAcceso">
+      <ul class="navbar-nav mr-auto acceso">
+        <li class="nav-item" id="liAcceso">
+        <a class="nav-link" href="#openModal"><span id="acceso">Acceso Trabajadores</span></a>
+      </li>
+      <li class="nav-item" id="liAcceso">
+        <a class="nav-link" href="#openModal2"><span id="acceso">Acceso Contratistas</span></a>
       </li>
       </ul>
-      <button class="btn  my-2 my-sm-0 naranja" type="submit"><a href="register.html">Registrarse</a></button>
+      <button class="btn my-2 my-sm-0 naranja hide" type="submit"><a href="register.html">Registrarse</a></button>
       
     </form>
   </div>
@@ -33,7 +37,7 @@
   <div class="row">
     <a href="#close" title="Close" class="close">X</a>
     <div class="col-6 loginTraba">
-    <form>
+    <form action="login.php">
       <h2>Acceso Trabajadores</h2>
       <div class="form-group">
         <label for="email">Email:</label>
@@ -47,18 +51,13 @@
       <button type="submit" class="btn btnLogin work naranja"><a href="#">ENVIAR</a></button>
     </form>
     </div>
-    <div class="col-6 loginReg">
-      <h2>Regístrate gratis</h2>
-      <p>Regístrate con nosotros para poder acceder a las ofertas de empleo que más te interesen. Una vez creada tu cuenta podrás solicitar los empleos y editar tu perfil.</p>
-      <button type="submit" class="btn work naranja"><a href="#">Registrar</a></button>
-    </div>
   </div>
 </div>
 <div id="openModal2" class="modalDialog">
   <div class="row">
     <a href="#close" title="Close" class="close">X</a>
     <div class="col-6 loginTraba">
-    <form>
+    <form action="login.php">
       <h2>Acceso Contratistas</h2>
       <div class="form-group">
         <label for="email">Email:</label>
@@ -72,10 +71,7 @@
       <button type="submit" class="btn btnLogin work naranja"><a href="#">ENVIAR</a></button>
     </form>
     </div>
-    <div class="col-6 loginReg">
-      <h2>Regístrate gratis</h2>
-      <p>Regístrate con nosotros para poder acceder a las ofertas de empleo que más te interesen. Una vez creada tu cuenta podrás solicitar los empleos y editar tu perfil.</p>
-      <button type="submit" class="btn work naranja"><a href="#">REGISTRAR</a></button>
-    </div>
+
   </div>
+</div>
 </div>
