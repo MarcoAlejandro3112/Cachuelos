@@ -53,25 +53,6 @@
     </div>
   </div>
 </div>
-<div id="openModal2" class="modalDialog">
-  <div class="row">
-    <a href="#close" title="Close" class="close">X</a>
-    <div class="col-6 loginTraba">
-    <form action="login.php">
-      <h2>Acceso Contratistas</h2>
-      <div class="form-group">
-        <label for="email">Email:</label>
-      <input type="email" class="form-control" name="email" placeholder="ejemplo1234@gmail.com">
-      </div>
-      <div class="form-group">
-        <label for="password">Contraseña:</label>
-      <input type="password" class="form-control" name="pass" placeholder="Ingresa tu contraseña">
-      </div>
-      <a href="#">¿Olvidaste tu contraseña?</a>
-      <button type="submit" class="btn btnLogin work naranja"><a href="login.php">ENVIAR</a></button>
-    </form>
-    </div>
 
-  </div>
 </div>
 </div>
