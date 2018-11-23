@@ -17,6 +17,7 @@
   <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.4.1/css/all.css" integrity="sha384-5sAR7xN1Nv6T6+dT2mhtzEpVJvfS3NScPQTrOxhwjIuvcA67KV2R5Jz6kr4abQsz" crossorigin="anonymous">
 </head>
 <body>
+	<div class="contenedor">	
 <div class="cajitasForm cajitaDetails cajaContratar" id="primero">
 		<form method="post" action="contratar.php">
 			<h1 style="text-align: center">Publicar un proyecto</h1>
@@ -49,6 +50,8 @@
 			</ul>
 		</form>
 	</div>
+	</div>
+	<div class="contenedor">	
 	<div class="cajitasForm cajitaDetails d-none cajaContratar" id="segundo">
 		<form method="post" action="contratar.php">
 			<h1 style="text-align: center">Segunda Parte</h1>
@@ -81,6 +84,7 @@
 				<li><a id="pTwo" href="#">2</a></li>
 			</ul>
 		</form>
+	</div>
 	</div>
 	<script type="text/javascript">
 		var btnNext = document.getElementById("btnNext");

@@ -55,7 +55,7 @@ background:white!important;
 	margin-bottom: 0px!important;
 }
 .cajitasForm{
-	width: 68%;
+	width:80%;
 	padding: 4% 4%!important;
 	background: white;
 	text-align: justify;
@@ -69,13 +69,16 @@ background:white!important;
 a {
 	color:white!important;
 }
-
-
+.contenedor{
+  display: flex;
+  flex-flow: row nowrap;
+  justify-content: center;
+  align-items:center;
+  margin-top: 1%;
+  margin-bottom: 1%;
+}
 .cajitaDetails{
-    position:absolute;
-    left:50%;
-    top:50%;
-    transform:translate(-50%,-50%)!important;
+
 }
 .withoutB{
     border:none!important;
@@ -135,3 +138,180 @@ footer p{
 div.alert{
 	display: none;
 }
+/*RESPONSIVE DESING===========================================================================================================================
+=============================================================================================================================================*/
+@media(min-width: 320px) {
+	#segundo{
+		padding: 1rem!important;
+	}
+   .cajitasForm {
+   	width: 90%;
+   	position: absolute;
+   	top:50%;
+   	transform: translateY(-50%);
+   }
+   .cajitasForm h1{
+   	font-size: 2em;
+   }
+   .cajitasForm label{
+   	font-size: 1em;
+
+   }
+   .cajitasForm div a{
+   	display: flex;
+   	justify-content: center!important;
+   	float: none!important;
+   }
+   .cajitasForm div button{
+   	display: flex;
+   	justify-content: center!important;
+   	float: none!important;
+   	width: 100%!important;
+   }
+   .cajitasForm form{
+
+   }
+}
+@media (min-width: 768px) {
+   h1,label{
+    font-family:"Oswald",sans-serif!important;
+    text-transform:uppercase;
+}
+.btn{
+   text-transform: uppercase;
+   font-family: "Oswald",sans-serif;
+   background-color: #FF5733;
+	color:white;
+	padding:.4rem 5rem!important;
+}
+label {
+	font-size: 1.2em;
+}
+a {
+	font-size: 1.2em!important;
+}
+a:hover {
+	color:rgba(255,255,255,0.6)!important;
+}
+.cajitasForm h1{
+   font-size: 3em; 
+}
+.cajaForm{
+	padding: 4% 6%;
+	overflow:hidden;
+	position: relative;
+
+}
+.cajaForm form button:hover  {
+	
+	color:rgba(255,255,255,0.6);
+}
+.cajitasForm {
+
+-webkit-box-shadow: 0 0 4px 0 rgba(0,0,0,.08), 0 2px 4px 0 rgba(0,0,0,.12);
+-moz-box-shadow: 0 0 4px 0 rgba(0,0,0,.08), 0 2px 4px 0 rgba(0,0,0,.12);
+box-shadow: 0 0 4px 0 rgba(0,0,0,.08), 0 2px 4px 0 rgba(0,0,0,.12);
+background:white!important;
+}
+
+.cajitasForm p {
+	margin-bottom: 0px!important;
+}
+.cajitasForm{
+	width:80%;
+	padding: 4% 4%!important;
+	background: white;
+	text-align: justify;
+	font-size: 1em;
+   line-height: 1.9em;
+   padding: 1.6%;
+}
+
+
+
+a {
+	color:white!important;
+}
+.contenedor{
+  display: flex;
+  flex-flow: row nowrap;
+  justify-content: center;
+  align-items:center;
+  margin-top: 1%;
+  margin-bottom: 1%;
+}
+.cajitaDetails{
+
+}
+.withoutB{
+    border:none!important;
+}
+.centrarR{
+	position:absolute;
+    top:50%;
+    transform:translateY(-50%)!important;
+    padding-left: 10%;
+    padding-right: 10%;
+}
+footer {
+    width: 100%;
+    background: #f5f5f5;
+    overflow: hidden;
+    padding-top: 10px;
+}
+footer p{
+    text-align: center;
+    color:#777;
+    font-family: "Oswald",sans-serif;
+    font-size:18px;
+
+}
+.listaPuntos{
+	list-style: none;
+	padding: 0px!important;
+	margin-bottom: 0px!important;
+	width: 100%;
+	text-align: center;
+	margin-top:1rem;
+}
+.listaPuntos li{
+	display: inline-block;
+	margin:0 6px;
+}
+.listaPuntos li a{
+	display: block;
+	width: 12px;
+	height: 12px;
+	border-radius: 12px;
+	text-indent: 9999px;
+	border:1px solid #777777;
+	background: white;
+}
+.boxButton {
+	padding: 0px!important;
+	overflow: hidden!important;
+}
+.active {
+	border:1px solid #777777!important;
+	background: #777777!important;
+}
+.cajaContratar{
+    padding:1% 2%!important;
+}
+div.alert{
+	display: none;
+}
+.cajitasForm div a{
+	float: right!important;
+}
+   .cajitasForm div button{
+   	width:initial!important;
+   	float: right!important;
+   }
+}
+@media (min-width: 1024px) {
+
+ }
+@media (min-width: 1200px) {
+  
+ }
