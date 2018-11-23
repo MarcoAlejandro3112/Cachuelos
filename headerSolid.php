@@ -48,7 +48,7 @@
       <input type="password" class="form-control" name="pass" placeholder="Ingresa tu contraseña">
       </div>
       <a href="#">¿Olvidaste tu contraseña?</a>
-      <button type="submit" class="btn btnLogin work naranja"><a href="#">ENVIAR</a></button>
+      <button type="submit" class="btn btnLogin work naranja"><a href="login.php">ENVIAR</a></button>
     </form>
     </div>
   </div>
@@ -68,7 +68,7 @@
       <input type="password" class="form-control" name="pass" placeholder="Ingresa tu contraseña">
       </div>
       <a href="#">¿Olvidaste tu contraseña?</a>
-      <button type="submit" class="btn btnLogin work naranja"><a href="#">ENVIAR</a></button>
+      <button type="submit" class="btn btnLogin work naranja"><a href="login.php">ENVIAR</a></button>
     </form>
     </div>
 
