@@ -12,6 +12,8 @@ if(isset($_REQUEST['email']) && !empty($_REQUEST['email']) && isset($_REQUEST['p
 	   $stm->execute(array(":email"=>$_REQUEST['email'],":pass"=>$pass));
 	   
         if($stm->rowCount()){
+            session_start();
+            $_SESSION['email']=$_REQUEST['email'];
             header('Location: register_details.html');
         }
       
