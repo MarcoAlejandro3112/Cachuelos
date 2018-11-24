@@ -1,3 +1,4 @@
+<?php session_start(); ?>
 <!DOCTYPE html>
 <html>
 
@@ -26,7 +27,7 @@
 			</div>
 			<div class="colPro">
 				<p>Bienvenido de nuevo:</p>
-				<h4>Nombre de usuario</h4>
+				<h4><?php echo $_SESSION['user']?></h4>
 			</div>
 		</div>
 	</div>

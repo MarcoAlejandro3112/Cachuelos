@@ -41,7 +41,7 @@ if(isset($_REQUEST['email']) && !empty($_REQUEST['email']) && isset($_REQUEST['p
                         $_SESSION['document']=$result['document']."<br>";
                         $_SESSION['country']=$result['country'];
                         
-                        header("Location:profile.php");
+                        header("Location:dashboard.php");
                     //fin inicio de sesión
             /*
                   array_push($user_data,array("user"=>$result['user'], "name"=>$result['name'], 

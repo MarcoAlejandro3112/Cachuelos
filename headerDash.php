@@ -36,3 +36,24 @@
   </div>
 </nav>
 </div>
+<div id="perfil">
+  <div class="topPerfil">
+    <div class="topUser"> 
+       <a href="#close" title="Close" class="closePerfil">X</a>
+    </div>
+    <div class="midUser"> 
+       <img src="img/user.png">
+    </div>
+    <div class="botUser"> 
+       <h5><?php echo $_SESSION['user']?></h5>
+       <p>Contratista</p>
+    </div>
+  </div>
+  <div class="bottomPerfil">
+    <ul>  
+      <li>Perfil</li>
+      <li>Configuracion</li>
+      <li>Salir</li>
+    </ul>
+  </div>
+</div>
