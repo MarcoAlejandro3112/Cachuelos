@@ -25,7 +25,7 @@ if(isset($_REQUEST['email']) && !empty($_REQUEST['email']) && isset($_REQUEST['p
 
        
     //Para traer los datos del usuario
-    $sql="SELECT ud.user,ud.name,ud.surname,ud.phone,ud.description,ud.document,ud.country FROM user_details ud,user u WHERE ud.user=:email LIMIT 1";//Falta implementar el sistema de rating
+    $sql="SELECT ud.user,ud.name,ud.surname,ud.phone,ud.descr,ud.document,ud.country FROM user_details ud,user u WHERE ud.user=:email LIMIT 1";//Falta implementar el sistema de rating
 
     
        
@@ -42,7 +42,7 @@ if(isset($_REQUEST['email']) && !empty($_REQUEST['email']) && isset($_REQUEST['p
                         $_SESSION['user']=$result['name']." ".$result["surname"]."<br>";
                         $_SESSION['phone']=$result['phone']."<br>";
                         $_SESSION['origin']=$result['user']."<br>";
-                        $_SESSION['description']=$result['description']."<br>";
+                        $_SESSION['description']=$result['descri']."<br>";
                         $_SESSION['document']=$result['document']."<br>";
                         $_SESSION['country']=$result['country'];
                         
