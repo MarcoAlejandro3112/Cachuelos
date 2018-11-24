@@ -18,10 +18,21 @@
     </ul>
     <div class="form-inline my-2 my-lg-0" id="formAcceso">
       <ul class="navbar-nav mr-auto">
-        <li class="nav-item float-right">
-        <a class="nav-link " href="#perfil" id="aImg"><img src="img/user.png" alt=""></a>
+        
+      <li class="nav-item">
+        <a class="nav-link " href="misProyectos.php">Mis Proyectos</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link " href="tablero.php">Tablero</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link " href="#notificaciones"><i class="fas fa-bell"></i></a>
+      </li>
+        <li class="nav-item">
+        <a class="nav-link " href="#perfil" id="aImg"><i class="fas fa-user"></i></a>
       </li>
       </ul>     
     </div>
   </div>
 </nav>
+</div>

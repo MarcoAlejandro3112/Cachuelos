@@ -19,5 +19,16 @@
 </head>
 <body>
 	<?php include("headerDash.php"); ?>
+	<div class="containerMain">
+		<div class="rowMain">
+			<div class="colNot">
+				<h3>Tus Notificaciones</h3>
+			</div>
+			<div class="colPro">
+				<p>Bienvenido de nuevo:</p>
+				<h4>Nombre de usuario</h4>
+			</div>
+		</div>
+	</div>
 </body>
 </html>

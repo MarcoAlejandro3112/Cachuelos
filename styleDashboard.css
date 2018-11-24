@@ -1,0 +1,347 @@
+html {
+    box-sizing: border-box!important;
+    margin: 0px!important;
+    padding: 0px!important;
+}
+*,*:after,*:before {
+    box-sizing: inherit!important;
+}
+body {
+    background-color: #EBEDEF!important;
+}
+nav {
+    padding-right:10%!important;
+    padding-left: 10%!important;
+    background-color:#1f618d;
+    transition: .3s;
+}
+.containerMain{
+  margin-top:7%;
+  padding-left: 10%!important;
+  padding-right: 10%!important;
+
+}
+.rowMain{
+  display: flex;
+  flex-flow: row wrap;
+}
+.rowMain div{
+  -webkit-box-shadow: 0 0 4px 0 rgba(0,0,0,.08), 0 2px 4px 0 rgba(0,0,0,.12);
+-moz-box-shadow: 0 0 4px 0 rgba(0,0,0,.08), 0 2px 4px 0 rgba(0,0,0,.12);
+box-shadow: 0 0 4px 0 rgba(0,0,0,.08), 0 2px 4px 0 rgba(0,0,0,.12);
+padding: 1rem;
+border-radius:0.2rem;
+}
+.colNot{
+  width: 69%;
+  background: white;
+  margin-right: 1%;
+}
+.colPro{
+  width: 30%;
+  background: white;
+}
+.naranja{
+    background-color: #FF5733;
+    color:white;
+}
+.amarillo-outline {
+    border:1px solid #FFC300!important;
+    background-color:#FFC300;
+    color:white;
+}
+.navbar-brand {
+    font-family:"Oswald",sans-serif;
+}
+nav .navbar-brand, ul li a {
+    color:white!important;
+}
+nav ul li:hover {
+    opacity: 0.6;
+}
+nav ul li {
+    margin:0px 10px;
+}
+#aImg {
+    width: 10%!important;
+}
+
+#formAcceso ul li a img{
+    width: 100%!important;
+}
+.acceso li:hover {
+    border:none!important;
+}
+nav form button a{
+    color:white;
+}
+nav div{
+
+}
+nav form button a:hover {
+    color:white;
+    text-decoration: none;
+    opacity: 0.6;
+}
+.acceso li{
+    margin:0px!important;
+    font-size: 12px;
+    text-transform: uppercase;
+}
+.acceso li:nth-child(1) a span{
+    border-right:1px solid white;
+    padding-right: 10px;
+}
+
+.btn{
+   text-transform: uppercase;
+   font-family: "Oswald",sans-serif;
+   background-color: #FF5733;
+    color:white;
+}
+
+.modalDialog {
+    position: fixed;
+    font-family: Arial, Helvetica, sans-serif;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    background: rgba(0,0,0,0.4);
+    z-index: 99999;
+    opacity:0;
+    -webkit-transition: opacity 400ms ease-in;
+    -moz-transition: opacity 400ms ease-in;
+    transition: opacity 400ms ease-in;
+    pointer-events: none;
+}
+.modalDialog:target {
+    opacity:1;
+    pointer-events: auto;
+}
+.modalDialog > div {
+    width: 70%;
+    position: relative;
+    margin: 10% auto;
+    border-radius:0.1rem;
+    background: #fff;
+    padding: 20px;
+  -webkit-transition: opacity 400ms ease-in;
+-moz-transition: opacity 400ms ease-in;
+transition: opacity 400ms ease-in;
+}
+.loginTraba{
+  border-right:1px solid #E8E8E8;
+}
+.loginReg{
+    padding-left: 20px;
+}
+.loginReg p {
+
+}
+.modalDialog .row form .form-group {
+    padding: 0px!important;
+}
+.modalDialog h2 {
+    font-family: "Oswald",sans-serif;
+    text-transform: uppercase;
+}
+.modalDialog .row {
+ text-align: left!important;
+
+}
+.btn:hover a{
+    color:white;
+    text-decoration: none;
+    opacity: 0.6;
+}
+.btn a {
+    color:white;
+}
+.modalDialog .row div {
+    padding-right: 20px;
+    padding-left: 20px;
+}
+.modalDialog form label {
+    text-align: left!important;
+}
+.btnLogin {
+    width: 50%;
+    margin-left: 0.7rem;
+    margin-right: 0px!important;
+}
+.close {
+    color: black;
+    opacity: 0.2;
+    position: absolute;
+    right: 0rem;
+    text-align: center;
+    top: 0.5rem;
+    width:4%;
+    text-decoration: none;
+    font-weight: 700;
+    font-size: 0.8rem!important;
+    font-family: "Verdana";
+}
+.close:hover {
+    color:black;
+    opacity: 0.6;
+}
+
+.withoutB{
+    border:none!important;
+}
+footer {
+    width: 100%;
+    background: #f5f5f5;
+    overflow: hidden;
+    padding-top: 10px;
+}
+footer p{
+    text-align: center;
+    color:#777;
+    font-family: "Oswald",sans-serif;
+    font-size:18px;
+
+}
+
+/*RESPONSIVE DESING===========================================================================================================================
+=============================================================================================================================================*/
+@media(min-width: 320px) {
+ nav{
+    background-color:#1f618d;
+ }
+ .navbar-toggler {
+    border-color: rgb(255,255,255)!important;
+ }
+ .navbar-toggler span {
+  background-image: url("data:image/svg+xml;charset=utf8,%3Csvg viewBox='0 0 32 32' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath stroke='rgba(255,255,255,1)' stroke-width='3' stroke-linecap='round' stroke-miterlimit='10' d='M4 8h24M4 16h24M4 24h24'/%3E%3C/svg%3E")!important;
+ }
+#formAcceso{
+    margin-top:0px!important;
+ }
+ nav a,span{
+    font-size: 12px;
+    text-transform: none;
+ }
+ nav ul li{
+    margin: 10px!important;
+ }
+ #liAcceso{
+    margin-right: 0px!important;
+ }
+#formAcceso ul {
+    margin-right: 0px!important;
+}
+ nav form .acceso li a span{
+    margin: 0px!important;
+    border:none!important;
+ }
+ #acceso{
+    padding:0px!important;
+ }
+ .hide {
+    display: none!important;
+ }
+ .loginReg{
+    display: none;
+ }
+ .loginTraba{
+    display: flex;
+    flex-flow:column wrap; 
+    justify-content: center;
+    max-width: 100%!important;
+    border:none;
+    padding: 0px!important;
+    flex:none!important;
+ }
+ .loginTraba h2{
+    text-align: center;
+ }
+ .loginTraba form a{
+    text-align: center!important;
+    display: flex;
+    justify-content: center;
+ }
+ .loginTraba form button {
+    margin-left: 0px;
+   width: 100%;
+   margin-top:1rem;
+ }
+ #openModal div.row a.close{
+    position: absolute;
+    top:0.5rem;
+    right: 0.5rem;
+
+}
+@media (min-width: 768px) {
+ body{
+ }
+  
+
+}
+@media (min-width: 1024px) {
+    .navbar-expand-lg .navbar-nav .nav-link {
+    padding-right: 0rem!important;
+    padding-left: 0rem!important;
+}
+    nav {
+        padding-left: 5%!important;
+        padding-right: 5%!important;
+    }
+    .hide2{
+        display: none!important;
+    }
+   nav ul li {
+    margin:0px 5px!important;
+   }
+   nav ul li a{
+    font-size: 0.9rem;
+   }
+   .acceso li a span{
+    text-transform: uppercase;
+    font-size: 0.6rem;
+   }
+   .acceso li:nth-child(1) a span{
+    border-right:1px solid white!important;
+    padding-right: 10px!important;
+   }
+   .hide {
+    display: initial!important;
+   }
+   nav form button a{
+       text-transform: uppercase!important;
+   }
+   #liAcceso:nth-child(1){
+    margin-left: 0px!important;
+   }
+   #acceso{
+    padding-right: 10px!important;
+   }
+   .modalDialog > div {
+        width: 50%;
+     }
+     #acceso{
+        padding-left: 10px!important;
+     }
+ }
+@media (min-width: 1200px) {
+
+     nav{
+        padding-left:10%!important;
+        padding-right: 10%!important;
+     }
+     nav ul li{
+        margin: 0px 20px!important;
+     }
+     nav ul li a{
+        font-size: 1rem;
+     }
+     .acceso li a span{
+        font-size:0.8rem;
+     }
+     nav a,span {
+        font-size: 1rem;
+     }
+     
+ }
