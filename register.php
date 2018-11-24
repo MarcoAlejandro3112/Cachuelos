@@ -19,7 +19,7 @@ if(isset($_REQUEST['email']) && !empty($_REQUEST['email']) && isset($_REQUEST['p
       
     }catch(PDOException $e){
         $status=array("status"=>$e->getMessage(),"action"=>"register","stat"=>false);
-            echo json_encode();
+            echo json_encode($status);
     }
     
 }else{
