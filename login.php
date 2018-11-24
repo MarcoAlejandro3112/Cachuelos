@@ -39,14 +39,14 @@ if(isset($_REQUEST['email']) && !empty($_REQUEST['email']) && isset($_REQUEST['p
 
                        session_start();
 
-                       echo $_SESSION['user']=$result['name']." ".$result["surname"]."<br>";
-                       echo $_SESSION['phone']=$result['phone']."<br>";
-                       echo $_SESSION['origin']=$result['user']."<br>";
-                       echo $_SESSION['description']=$result['description']."<br>";
-                       echo $_SESSION['document']=$result['document']."<br>";
-                       echo $_SESSION['country']=$result['country'];
+                        $_SESSION['user']=$result['name']." ".$result["surname"]."<br>";
+                        $_SESSION['phone']=$result['phone']."<br>";
+                        $_SESSION['origin']=$result['user']."<br>";
+                        $_SESSION['description']=$result['description']."<br>";
+                        $_SESSION['document']=$result['document']."<br>";
+                        $_SESSION['country']=$result['country'];
                         
-                        sheader("Location:profile.php");
+                        header("Location:profile.php");
 
                     //fin inicio de sesión
             /*
