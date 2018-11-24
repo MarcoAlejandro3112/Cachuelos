@@ -134,7 +134,36 @@
           </div>
         </div>
             <div class="posts container">
-                
+                <article class="ct-post row">
+         <div class="primaryInfoPost col-9">
+         <div class="topArticle col-12">
+           <h3>PRIMER POST <span class="fecha">Desde 23/11/18</span></h3>
+            <h4>USUARIO</h4>
+         </div>
+         <div class="midArticle col-12">
+         <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sit quas ullam debitis pariatur sapiente totam odit expedita? Eius, labore commodi molestiae maxime culpa dolore molestias, cum in fugiat eligendi facilis.</p>
+         </div>
+         <div class="botArticle col-12">
+           <ul class="tags">
+           <li class="tag"><a href="#">Programación</a></li>
+           <li class="tag"><a href="#">Física</a></li>
+           </ul>
+         </div>
+         </div>
+         <div class="secondaryInfoPost col-3">
+         <div class="row">
+         <div class="col-12 boxExtras">
+         <p>$200 <span>Oferta Promedio</span></p>
+         <p><span>7 Postulantes</span></p>
+         </div>
+         </div>
+         <div class="row">
+         <div class="col-12 boxExtras">
+         <p class="pOfertar"><a href="#">OFERTAR AHORA</a></p>
+         </div>
+         </div>
+         </div>
+     </article>
                 
               </div>
               
