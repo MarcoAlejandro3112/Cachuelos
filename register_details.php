@@ -32,7 +32,7 @@ if(isset($_FILES)  &&  isset($_REQUEST['name']) && !empty($_REQUEST['name']) && 
            
 
         if(move_uploaded_file($_FILES['uploadedfile']['tmp_name'], $target_path)) {
-         echo "El archivo ". basename( $_FILES['uploadedfile']['name']). " ha sido subido"; header("Location: index.php");
+         echo "El archivo ". basename( $_FILES['uploadedfile']['name']). " ha sido subido"; header("Location:index.php#openModal2");
         } else{
         echo "Ha ocurrido un error, trate de nuevo!";
         }
@@ -46,8 +46,8 @@ if(isset($_FILES)  &&  isset($_REQUEST['name']) && !empty($_REQUEST['name']) && 
     }catch(PDOException $e){
         $status=array("status"=>$e->getMessage(),"action"=>"register1","stat"=>false);
             echo json_encode($status);
-
-            echo "string";
+                           
+        
     }
     
 }else{

@@ -4,7 +4,6 @@
  * Los usuarios sin contenido en 'user_details' no pueden loguearse
  **/
 require_once('connection.php');
-
 $status=array("status"=>"error","action"=>"login","stat"=>false);
 if(isset($_REQUEST['email']) && !empty($_REQUEST['email']) && isset($_REQUEST['pass']) 
 && !empty($_REQUEST['pass']) ){
@@ -22,11 +21,9 @@ if(isset($_REQUEST['email']) && !empty($_REQUEST['email']) && isset($_REQUEST['p
    
    //comparar passwords
    if($inpass == $result1['pass']){
-
        
     //Para traer los datos del usuario
     $sql="SELECT ud.user,ud.name,ud.surname,ud.phone,ud.descr,ud.document,ud.country FROM user_details ud,user u WHERE ud.user=:email LIMIT 1";//Falta implementar el sistema de rating
-
     
        
     $stm=$link->prepare($sql);
@@ -36,9 +33,7 @@ if(isset($_REQUEST['email']) && !empty($_REQUEST['email']) && isset($_REQUEST['p
         if($result){
           //SOLO PARA ANDROID  $status=array("status"=>"succes","action"=>"login","stat"=>true);
                       //inicio de sesión
-
                        session_start();
-
                         $_SESSION['user']=$result['name']." ".$result["surname"]."<br>";
                         $_SESSION['phone']=$result['phone']."<br>";
                         $_SESSION['origin']=$result['user']."<br>";
@@ -47,7 +42,6 @@ if(isset($_REQUEST['email']) && !empty($_REQUEST['email']) && isset($_REQUEST['p
                         $_SESSION['country']=$result['country'];
                         
                         header("Location:profile.php");
-
                     //fin inicio de sesión
             /*
                   array_push($user_data,array("user"=>$result['user'], "name"=>$result['name'], 
