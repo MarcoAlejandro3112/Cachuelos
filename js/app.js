@@ -1,18 +1,3 @@
-$(function(){
-    /**
-     * Submit search form
-     */
-$(window).on('scroll',function(){
-
-    if($(window).scrollTop()){
-        $('nav').addClass('dark');
-    }else{
-        $('nav').removeClass('dark');
-    }
-
-});
-     
-
      var template ='<article class="ct-post row">'+
          '<div class="primaryInfoPost col-9">'+
          '<div class="topArticle col-12">'+
@@ -44,7 +29,91 @@ $(window).on('scroll',function(){
          '</div>'+
      '</article>';
 
-     $.ajax('http://cachuelos.000webhostapp.com/listar_posts.php')
+$(function(){
+    /**
+     * Submit search form
+     */
+
+     search();
+
+     function search(key){
+
+         if(key!=""){
+            $("#app-body").find('.ct-post').hide();
+            var req= $.get('search.php',{key:key});
+
+            req.done(
+                function (datos) {
+                var posts=JSON.parse(datos);
+             posts.forEach(function(post){
+                 var $postCtn = $('#app-body')
+                 .find('div.posts');
+                 var article = template
+                 .replace(':title:',post.title)
+                 .replace(":date:",post.date)
+                 .replace(":pay:",post.payment)
+                 .replace(":summary:",post.content)
+                 .replace(":user:",post.user);
+
+                 
+                 $postCtn.append($(article));
+                
+            })}).fail(
+            function(data) {
+                console.log(data);
+            });
+    
+    }//if
+    else{$("#app-body").find('.ct-post').hide();
+        var req= $.get('search.php');
+        req.done(
+            function (datos) {
+                var posts=JSON.parse(datos);
+             posts.forEach(function(post){
+                 var $postCtn = $('#app-body')
+                 .find('div.posts');
+                 var article = template
+                 .replace(':title:',post.title)
+                 .replace(":date:",post.date)
+                 .replace(":pay:",post.payment)
+                 .replace(":summary:",post.content)
+                 .replace(":user:",post.user);
+                 
+                 $postCtn.append($(article));
+                
+            })}).fail(function(data) {
+                console.log(data);
+            });
+
+     }
+ }//fun
+    
+
+       $("#app-body")
+       .find('form')
+       .find('#key')
+       .keyup(function(ev){
+        ev.preventDefault();
+        var k=$('#key').val();
+        search(k);
+       });
+
+            
+     
+
+
+/*$(window).on('scroll',function(){
+    if($(window).scrollTop()){
+        $('nav').addClass('dark');
+    }else{
+        $('nav').removeClass('dark');
+    }
+
+});*/
+     
+
+
+    /* $.ajax('http://cachuelos.000webhostapp.com/listar_posts.php')
          .done( function(datos,textStatus,xhr){
              console.log('success');
         var posts=JSON.parse(datos);
@@ -64,7 +133,7 @@ $(window).on('scroll',function(){
              
         
 
-     })
+     })*/
 
      
-})
+});
