@@ -708,6 +708,9 @@ img[src*="https://cdn.rawgit.com/000webhost/logo/e9bd13f7/footer-powered-by-000w
 .modalDialog > div {
      	width: 50%;
      }
+     .how h2 {
+      text-align: left!important;
+     }
  }
 @media (min-width: 1200px) {
 

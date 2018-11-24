@@ -113,9 +113,7 @@
     <li class="page-item"><a class="page-link" href="#">4</a></li>
     <li class="page-item"><a class="page-link" href="#">5</a></li>
     <li class="page-item"><a class="page-link" href="#">6</a></li>
-    <li class="page-item"><a class="page-link" href="#">7</a></li>
-    <li class="page-item"><a class="page-link" href="#">8</a></li>
-    <li class="page-item"><a class="page-link" href="#">9</a></li>
+
         <li class="page-item">
       <a class="page-link" href="#" aria-label="Next">
         <span aria-hidden="true">&raquo;</span>
@@ -149,7 +147,7 @@
        <div class="footBody col-9 withoutPd">
                 <div class="row withoutPd">
                     
-                    <div class="col-6 withoutPd"> <div class="dropdown DropnumPost"><span>Resultados por página</span>
+                    <div class="col-6 withoutPd"  id="colFoot"> <div class="dropdown DropnumPost"><span>Resultados por página</span>
   <button class="btn btn-secondary dropdown-toggle" type="button" id="dropdownMenu2" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
     50
   </button>
@@ -160,7 +158,8 @@
     <button class="dropdown-item" type="button">100</button>
   </div>
 </div></div>
-                    <div class="col-6 withoutPd">  <nav class="navPag" aria-label="Page navigation example">
+            <div class="col-6 withoutPd " id="colFoot">
+              <nav class="navPag" aria-label="Page navigation example">
   <ul class="pagination justify-content-end">
     
     <li class="page-item">
@@ -170,14 +169,12 @@
       </a>
     </li>
     <li class="page-item "><a class="page-link active " href="#">1</a></li>
-    <li class="page-item"><a class="page-link" href="#">2</a></li>
+    <li class="page-item"><a class="page-link " href="#">2</a></li>
     <li class="page-item"><a class="page-link" href="#">3</a></li>
     <li class="page-item"><a class="page-link" href="#">4</a></li>
     <li class="page-item"><a class="page-link" href="#">5</a></li>
     <li class="page-item"><a class="page-link" href="#">6</a></li>
-    <li class="page-item"><a class="page-link" href="#">7</a></li>
-    <li class="page-item"><a class="page-link" href="#">8</a></li>
-    <li class="page-item"><a class="page-link" href="#">9</a></li>
+
         <li class="page-item">
       <a class="page-link" href="#" aria-label="Next">
         <span aria-hidden="true">&raquo;</span>
@@ -185,7 +182,8 @@
       </a>
     </li>
   </ul>
-</nav></div>
+</nav>
+            </div>
             </div>
               </div>
      </section>
