@@ -37,7 +37,7 @@
   <div class="row">
     <a href="#close" title="Close" class="close">X</a>
     <div class="col-6 loginTraba">
-    <form action="login.php">
+    <form method="post" action="login.php">
       <h2>Acceso Trabajadores</h2>
       <div class="form-group">
         <label for="email">Email:</label>
@@ -48,7 +48,7 @@
       <input type="password" class="form-control" name="pass" placeholder="Ingresa tu contraseña">
       </div>
       <a href="#">¿Olvidaste tu contraseña?</a>
-      <button type="submit" class="btn btnLogin work naranja"><a href="login.php">ENVIAR</a></button>
+      <button type="submit" class="btn btnLogin work naranja">ENVIAR</button>
     </form>
     </div>
   </div>
@@ -57,7 +57,7 @@
   <div class="row">
     <a href="#close" title="Close" class="close">X</a>
     <div class="col-6 loginTraba">
-    <form action="login.php">
+    <form method="post" action="login.php">
       <h2>Acceso Contratistas</h2>
       <div class="form-group">
         <label for="email">Email:</label>
@@ -68,7 +68,7 @@
       <input type="password" class="form-control" name="pass" placeholder="Ingresa tu contraseña">
       </div>
       <a href="#">¿Olvidaste tu contraseña?</a>
-      <button type="submit" class="btn btnLogin work naranja"><a href="login.php">ENVIAR</a></button>
+      <button type="submit" class="btn btnLogin work naranja">ENVIAR</button>
     </form>
     </div>
 

@@ -14,6 +14,7 @@
   <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
   <script type="text/javascript" src="js/app.js"></script>
 	<link rel="stylesheet" type="text/css" href="css/styleDashboard.css">
+	<link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet">
 	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
 	<link href="https://fonts.googleapis.com/css?family=Oswald" rel="stylesheet">
   <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.4.1/css/all.css" integrity="sha384-5sAR7xN1Nv6T6+dT2mhtzEpVJvfS3NScPQTrOxhwjIuvcA67KV2R5Jz6kr4abQsz" crossorigin="anonymous">
@@ -23,11 +24,34 @@
 	<div class="containerMain">
 		<div class="rowMain">
 			<div class="colNot">
-				<h3>Tus Notificaciones</h3>
+				<h3>Notificaciones</h3>
+				<div class="boxNot">
+					<?php 
+					$con=mysqli_connect("localhost","root","","id7557222_cachuelos");
+                         $noti = mysqli_query($con,"SELECT * FROM notificationsTest WHERE user2 = '".$_SESSION['udid']."'");
+                         while($not = mysqli_fetch_array($noti)){
+                        $users = mysqli_query($con,"SELECT * FROM user_details WHERE udid ='".$not['user1']."'");
+                        $user = mysqli_fetch_array($users);
+					?>
+					    <span><?php echo $not['fecha']?></span>
+			            <h4><?php echo $not['title']?></h4>
+			            <img src="data:image/jpg;base64,<?php echo base64_encode($user['img']);?>"/>
+			            <h6><?php echo $user['name']." ".$user['surname'];?> </h6>
+			            <p><?php echo $not['content']?></p>
+					<?php  }?>
+				</div>
 			</div>
 			<div class="colPro">
-				<p>Bienvenido de nuevo:</p>
+				<div class="leftPro">
+				<img src="img/user.png" alt="">
+				</div>
+				<div class="rightPro">	
+				<span>Buenos Días..</span>
 				<h4><?php echo $_SESSION['user']?></h4>
+
+               <span>Saldo Disponible: $50</span>
+               <button class="btn"><a href="#">Ver Perfil</a></button>
+				</div>
 			</div>
 		</div>
 	</div>

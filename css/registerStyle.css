@@ -124,6 +124,9 @@ footer p{
 	border:1px solid #777777;
 	background: white;
 }
+.show{
+  display:block!important;
+}
 .boxButton {
 	padding: 0px!important;
 	overflow: hidden!important;

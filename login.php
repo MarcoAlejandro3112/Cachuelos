@@ -17,13 +17,13 @@ if(isset($_REQUEST['email']) && !empty($_REQUEST['email']) && isset($_REQUEST['p
    $result1= $stm1->fetch(); 
    $user_data=array();
    //encriptar la contraseña que ingresa el usuario
-       $inpass=crypt($_REQUEST['pass'],$result1['pass']);
-   
+       //SOLUCIONAR:$inpass=crypt($_REQUEST['pass'],$result1['pass']);
+      $inpass=$_REQUEST['pass'];
    //comparar passwords
    if($inpass == $result1['pass']){
        
     //Para traer los datos del usuario
-    $sql="SELECT ud.user,ud.name,ud.surname,ud.phone,ud.descr,ud.document,ud.country FROM user_details ud,user u WHERE ud.user=:email LIMIT 1";//Falta implementar el sistema de rating
+    $sql="SELECT ud.udid,ud.user,ud.name,ud.surname,ud.phone,ud.descr,ud.document,ud.country FROM user_details ud,user u WHERE ud.user=:email LIMIT 1";//Falta implementar el sistema de rating
     
        
     $stm=$link->prepare($sql);
@@ -34,10 +34,11 @@ if(isset($_REQUEST['email']) && !empty($_REQUEST['email']) && isset($_REQUEST['p
           //SOLO PARA ANDROID  $status=array("status"=>"succes","action"=>"login","stat"=>true);
                       //inicio de sesión
                        session_start();
+                        $_SESSION['udid'] = $result['udid']."<br>";
                         $_SESSION['user']=$result['name']." ".$result["surname"]."<br>";
                         $_SESSION['phone']=$result['phone']."<br>";
                         $_SESSION['origin']=$result['user']."<br>";
-                        $_SESSION['description']=$result['descri']."<br>";
+                        $_SESSION['description']=$result['descr']."<br>";
                         $_SESSION['document']=$result['document']."<br>";
                         $_SESSION['country']=$result['country'];
                         

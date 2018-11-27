@@ -46,14 +46,15 @@
     </div>
     <div class="botUser"> 
        <h5><?php echo $_SESSION['user']?></h5>
-       <p>Contratista</p>
+       <p>Miembro desde 25/11/18</p>
     </div>
   </div>
   <div class="bottomPerfil">
     <ul>  
-      <li>Perfil</li>
-      <li>Configuracion</li>
-      <li>Salir</li>
+      <li><i class="fas fa-user-circle"></i><a href="#">Perfil</a></li>
+      <li><i class="fas fa-cog"></i><a href="#">Configuración</a></li>
+      <li><i class="far fa-question-circle"></i><a href="contacto.php">¿Ayuda?</a></li>
+      <li><i class="fas fa-sign-out-alt"></i><a href="out.php">Salir</a></li>
     </ul>
   </div>
 </div>
