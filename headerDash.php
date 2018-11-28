@@ -26,7 +26,8 @@
         <a class="nav-link " href="tablero.php">Tablero</a>
       </li>
       <li class="nav-item">
-        <a class="nav-link " href="#notificaciones"><i class="fas fa-bell"></i></a>
+        <a class="nav-link " href="#navNot"><i class="fas fa-bell"></i></a>
+          
       </li>
         <li class="nav-item">
         <a class="nav-link " href="#perfil" id="aImg"><i class="fas fa-user"></i></a>
@@ -35,6 +36,29 @@
     </div>
   </div>
 </nav>
+
+<div id="navNot">
+  <div class="nHeadNot">
+    <h5>Notificaciones</h5>
+  </div>
+          <?php 
+          $con=mysqli_connect("localhost","root","","id7557222_cachuelos");
+                         $noti = mysqli_query($con,"SELECT * FROM notificationsTest WHERE user2 = '".$_SESSION['udid']."'");
+                         while($not = mysqli_fetch_array($noti)){
+                        $users = mysqli_query($con,"SELECT * FROM user_details WHERE udid ='".$not['user1']."'");
+                        $user = mysqli_fetch_array($users);
+          ?>
+          <div class="nBoxNot">
+            <div class="nleftNot"> 
+                       <img src="data:image/jpg;base64,<?php echo base64_encode($user['img']);?>"/>
+            </div>
+            <div class="nrightNot">  
+                   <span><?php echo $not['fecha']?></span>
+                  <h6><?php echo $not['title']?></h6>
+            </div>
+            </div>
+          <?php  }?>
+          
 </div>
 <div id="perfil">
   <div class="topPerfil">
@@ -57,4 +81,5 @@
       <li><i class="fas fa-sign-out-alt"></i><a href="out.php">Salir</a></li>
     </ul>
   </div>
+</div>
 </div>
