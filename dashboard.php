@@ -25,7 +25,7 @@
 		<div class="rowMain">
 			<div class="colNot">
 				<h3>Notificaciones</h3>
-				<div class="boxNot">
+				<div class="boxNots">
 					<?php 
 					$con=mysqli_connect("localhost","root","","id7557222_cachuelos");
                          $noti = mysqli_query($con,"SELECT * FROM notificationsTest WHERE user2 = '".$_SESSION['udid']."'");
@@ -33,11 +33,17 @@
                         $users = mysqli_query($con,"SELECT * FROM user_details WHERE udid ='".$not['user1']."'");
                         $user = mysqli_fetch_array($users);
 					?>
-					    <span><?php echo $not['fecha']?></span>
+					<div class="boxNot">
+						<div class="leftNot">	
+                       <img src="data:image/jpg;base64,<?php echo base64_encode($user['img']);?>"/>
+						</div>
+						<div class="rightNot">	
+                            <span><?php echo $not['fecha']?></span>
 			            <h4><?php echo $not['title']?></h4>
-			            <img src="data:image/jpg;base64,<?php echo base64_encode($user['img']);?>"/>
 			            <h6><?php echo $user['name']." ".$user['surname'];?> </h6>
 			            <p><?php echo $not['content']?></p>
+						</div>
+			        </div>
 					<?php  }?>
 				</div>
 			</div>
