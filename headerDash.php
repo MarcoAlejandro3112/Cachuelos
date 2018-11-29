@@ -1,6 +1,6 @@
 <div class="containerNav">
 <nav class="navbar navbar-expand-lg navbar-light fixed-top" id="nav">
-  <a class="navbar-brand" href="index.php">CACHUELOS</a>
+  <a class="navbar-brand" href="dashboard.php">CACHUELOS</a>
   <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
     <span class="navbar-toggler-icon"></span>
   </button>
@@ -23,10 +23,10 @@
         <a class="nav-link " href="misProyectos.php">Mis Proyectos</a>
       </li>
       <li class="nav-item">
-        <a class="nav-link " href="tablero.php">Tablero</a>
+        <a class="nav-link " href="dashboard.php">Tablero</a>
       </li>
       <li class="nav-item">
-        <a class="nav-link " href="#navNot"><i class="fas fa-bell"></i></a>
+        <a class="nav-link " id="bell" href="#navNot"><i class="fas fa-bell"></i></a>
           
       </li>
         <li class="nav-item">
@@ -58,7 +58,9 @@
             </div>
             </div>
           <?php  }?>
-          
+     <div class="nFootNot">
+        <a href="#">Ver Todas</a>
+     </div>     
 </div>
 <div id="perfil">
   <div class="topPerfil">
@@ -75,7 +77,7 @@
   </div>
   <div class="bottomPerfil">
     <ul>  
-      <li><i class="fas fa-user-circle"></i><a href="#">Perfil</a></li>
+      <li><i class="fas fa-user-circle"></i><a href="perfil.php">Perfil</a></li>
       <li><i class="fas fa-cog"></i><a href="#">Configuración</a></li>
       <li><i class="far fa-question-circle"></i><a href="contacto.php">¿Ayuda?</a></li>
       <li><i class="fas fa-sign-out-alt"></i><a href="out.php">Salir</a></li>

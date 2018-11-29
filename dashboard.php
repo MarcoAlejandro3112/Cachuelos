@@ -23,9 +23,9 @@
 	<?php include("headerDash.php"); ?>
 	<div class="containerMain">
 		<div class="rowMain">
-			<div class="colNot">
-				<h3>Notificaciones</h3>
-				<div class="boxNots">
+			   <div class="colNot">
+				   <h3>Notificaciones</h3>
+				   <div class="boxNots">
 					<?php 
 					$con=mysqli_connect("localhost","root","","id7557222_cachuelos");
                          $noti = mysqli_query($con,"SELECT * FROM notificationsTest WHERE user2 = '".$_SESSION['udid']."'");
@@ -45,21 +45,39 @@
 						</div>
 			        </div>
 					<?php  }?>
-				</div>
-			</div>
-			<div class="colPro">
-				<div class="leftPro">
-				<img src="img/user.png" alt="">
-				</div>
-				<div class="rightPro">	
-				<span>Buenos Días..</span>
-				<h4><?php echo $_SESSION['user']?></h4>
+				    </div>
+				 </div>   
+			    <div class="colPro">
+				    <div class="leftPro">
+				   <img src="img/user.png" alt="">
+				   </div>
+				   <div class="rightPro">	
+				   <span>Buenos Días..</span>
+				   <h4><?php echo $_SESSION['user']?></h4>
 
-               <span>Saldo Disponible: $50</span>
-               <button class="btn"><a href="#">Ver Perfil</a></button>
-				</div>
-			</div>
+                   <span>Saldo Disponible: $50</span>
+                    <button class="btn"><a href="dashboard.php">Ver Perfil</a></button>
+				   </div>
+			     </div>
+
 		</div>
+
 	</div>
+
+	<script>
+		var bell = document.getElementById("bell");
+		var not = document.getElementById("navNot");
+		var toggle = false;
+		bell.addEventListener("click",function(){
+			
+            if(toggle == true){
+            	not.className = "";
+            	toggle = false;
+            } else {
+            	not.className = "show";
+            toggle = true;
+            }
+		});
+	</script>
 </body>
 </html>
