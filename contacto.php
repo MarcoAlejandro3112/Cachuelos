@@ -1,3 +1,4 @@
+<?php session_start();?>
 <!DOCTYPE html>
 <html>
 <head>
@@ -17,7 +18,15 @@
   <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.4.1/css/all.css" integrity="sha384-5sAR7xN1Nv6T6+dT2mhtzEpVJvfS3NScPQTrOxhwjIuvcA67KV2R5Jz6kr4abQsz" crossorigin="anonymous">
 </head>
 <body>
-<?php include("headerSolid.php"); ?>
+<?php 
+    $varsession = $_SESSION['origin'];
+    if($varsession == null || $varsession = ''){
+      include("headerSolid.php"); 
+    } else {
+        include("headerDash.php");
+    }
+    
+?>
 <div class="cajitasForm cajitaDetails">
 		<form method="post" action="contacto.php">
 			<h1>Contacto</h1>
@@ -39,7 +48,7 @@
 		</form>
 	
 </div>
-<footer class="fixed-bottom">
+<footer>
   <p>Todos los derechos reservados &copy; | iDev</p>
 </footer>
 </body>

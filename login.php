@@ -23,7 +23,7 @@ if(isset($_REQUEST['email']) && !empty($_REQUEST['email']) && isset($_REQUEST['p
    if($inpass == $result1['pass']){
        
     //Para traer los datos del usuario
-    $sql="SELECT ud.udid,ud.user,ud.name,ud.surname,ud.phone,ud.descr,ud.document,ud.country,ud.Date,ud.profile,ud.title FROM user_details ud,user u WHERE ud.user=:email LIMIT 1";//Falta implementar el sistema de rating
+    $sql="SELECT ud.udid,ud.user,ud.name,ud.surname,ud.phone,ud.descr,ud.document,ud.country,ud.Date,ud.profile,ud.title,ud.img FROM user_details ud,user u WHERE ud.user=:email LIMIT 1";//Falta implementar el sistema de rating
     
        
     $stm=$link->prepare($sql);
@@ -44,6 +44,7 @@ if(isset($_REQUEST['email']) && !empty($_REQUEST['email']) && isset($_REQUEST['p
                         $_SESSION['Date']=$result['Date']."<br>";
                         $_SESSION['profile']=$result['profile'];
                         $_SESSION['title']=$result['title'];
+                        $_SESSION['img']=$result['img'];
                         header("Location:dashboard.php");
                     //fin inicio de sesión
             /*

@@ -1,3 +1,4 @@
+<?php session_start(); ?>
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -19,11 +20,19 @@
 
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
-    <script src="js/app.js"></script>
+    
 </head>
 <body>
   <div id="app-container">
-    <?php include("headerSolid.php"); ?>
+    <?php 
+    $varsession = $_SESSION['origin'];
+    if($varsession == null || $varsession = ''){
+      include("headerSolid.php"); 
+    } else {
+        include("headerDash.php");
+    }
+    
+    ?>
 
 <div class="container app-box">
 <div class=" row">
@@ -77,7 +86,7 @@
         <div class="col-1 searchMiniBox">
            <input type="submit" value="BUSCAR" class="btn btnSearch col-12">
         </div>
-          
+
         </div>
         </form>
         <div class="container  withoutPd">
@@ -134,66 +143,7 @@
           </div>
         </div>
             <div class="posts container">
-                <article class="ct-post row">
-         <div class="primaryInfoPost col-9">
-         <div class="topArticle col-12">
-           <h3>PRIMER POST <span class="fecha">Desde 23/11/18</span></h3>
-            <h4>USUARIO</h4>
-         </div>
-         <div class="midArticle col-12">
-         <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sit quas ullam debitis pariatur sapiente totam odit expedita? Eius, labore commodi molestiae maxime culpa dolore molestias, cum in fugiat eligendi facilis.</p>
-         </div>
-         <div class="botArticle col-12">
-           <ul class="tags">
-           <li class="tag"><a href="#">Programación</a></li>
-           <li class="tag"><a href="#">Física</a></li>
-           </ul>
-         </div>
-         </div>
-         <div class="secondaryInfoPost col-3">
-         <div class="row">
-         <div class="col-12 boxExtras">
-         <p>$200 <span>Oferta Promedio</span></p>
-         <p><span>7 Postulantes</span></p>
-         </div>
-         </div>
-         <div class="row">
-         <div class="col-12 boxExtras">
-         <p class="pOfertar"><a href="#">OFERTAR AHORA</a></p>
-         </div>
-         </div>
-         </div>
-     </article>
-                 <article class="ct-post row">
-         <div class="primaryInfoPost col-9">
-         <div class="topArticle col-12">
-           <h3>PRIMER POST <span class="fecha">Desde 23/11/18</span></h3>
-            <h4>USUARIO</h4>
-         </div>
-         <div class="midArticle col-12">
-         <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sit quas ullam debitis pariatur sapiente totam odit expedita? Eius, labore commodi molestiae maxime culpa dolore molestias, cum in fugiat eligendi facilis.</p>
-         </div>
-         <div class="botArticle col-12">
-           <ul class="tags">
-           <li class="tag"><a href="#">Programación</a></li>
-           <li class="tag"><a href="#">Física</a></li>
-           </ul>
-         </div>
-         </div>
-         <div class="secondaryInfoPost col-3">
-         <div class="row">
-         <div class="col-12 boxExtras">
-         <p>$200 <span>Oferta Promedio</span></p>
-         <p><span>7 Postulantes</span></p>
-         </div>
-         </div>
-         <div class="row">
-         <div class="col-12 boxExtras">
-         <p class="pOfertar"><a href="#">OFERTAR AHORA</a></p>
-         </div>
-         </div>
-         </div>
-     </article>
+                
               </div>
               
               
@@ -251,8 +201,12 @@
     <footer>
   <p>Todos los derechos reservados &copy; | iDev</p>
 </footer>
+<?php
+   $id = "<script>id</script>";
+   
+?>
       <!-- BOOTSTRAP JQUERY-->
-      
+    <script src="js/app.js"></script>  
 <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
 <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous"></script>
 <div style='text-align: right;position: fixed;z-index:9999999;bottom: 0; width: 100%;cursor: pointer;line-height: 0;display:block !important;'><a title="Hosted on free web hosting 000webhost.com. Host your own website for FREE." target="_blank" href="https://www.000webhost.com/?utm_source=000webhostapp&amp;utm_campaign=000_logo&amp;utm_medium=website_cachuelos&amp;utm_content=footer_img"><img src="https://cdn.rawgit.com/000webhost/logo/e9bd13f7/footer-powered-by-000webhost-white2.png"  alt="www.000webhost.com"></a></div></body>

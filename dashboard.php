@@ -20,7 +20,23 @@
   <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.4.1/css/all.css" integrity="sha384-5sAR7xN1Nv6T6+dT2mhtzEpVJvfS3NScPQTrOxhwjIuvcA67KV2R5Jz6kr4abQsz" crossorigin="anonymous">
 </head>
 <body>
+	<script>
+		var bell = document.getElementById("bell");
+		var not = document.getElementById("navNot");
+		var toggle = false;
+		bell.addEventListener("click",function(){
+			
+            if(toggle == true){
+            	not.className = "";
+            	toggle = false;
+            } else {
+            	not.className = "show";
+            toggle = true;
+            }
+		});
+	</script>
 	<?php include("headerDash.php"); ?>
+
 	<div class="containerMain">
 		<div class="rowMain">
 			   <div class="colNot">
@@ -49,14 +65,14 @@
 				 </div>   
 			    <div class="colPro">
 				    <div class="leftPro">
-				   <img src="img/user.png" alt="">
+				   <img src="data:image/jpg;base64,<?php echo base64_encode($_SESSION['img']);?>"/>
 				   </div>
 				   <div class="rightPro">	
 				   <span>Buenos Días..</span>
 				   <h4><?php echo $_SESSION['user']?></h4>
 
                    <span>Saldo Disponible: $50</span>
-                    <button class="btn"><a href="dashboard.php">Ver Perfil</a></button>
+                    <button class="btn"><a href="perfil.php">Ver Perfil</a></button>
 				   </div>
 			     </div>
 
@@ -64,20 +80,6 @@
 
 	</div>
 
-	<script>
-		var bell = document.getElementById("bell");
-		var not = document.getElementById("navNot");
-		var toggle = false;
-		bell.addEventListener("click",function(){
-			
-            if(toggle == true){
-            	not.className = "";
-            	toggle = false;
-            } else {
-            	not.className = "show";
-            toggle = true;
-            }
-		});
-	</script>
+	
 </body>
 </html>

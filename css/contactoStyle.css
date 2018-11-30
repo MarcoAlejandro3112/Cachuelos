@@ -8,6 +8,7 @@ html {
 }
 body {
     background-color: #EBEDEF!important;
+    font-family: "Roboto",sans-serif!important;
 }
 nav {
     padding-right:10%!important;
@@ -347,6 +348,557 @@ footer p{
      }
      nav ul li{
         margin: 0px 10px!important;
+     }
+     nav ul li a{
+        font-size: 1rem;
+     }
+     .acceso li a span{
+        font-size:0.8rem;
+     }
+     nav a,span {
+        font-size: 1rem;
+     }
+     
+ }
+ #aImg {
+    width: 10%!important;
+}
+#perfil{
+  width:20%;
+  position: absolute;
+  right: 0;
+  top:0;
+  background:#1f2836;
+  color:white;
+  height: 100vh;
+  z-index: 1100;
+  pointer-events: none;
+  opacity: 0;
+  -webkit-transition: opacity 100ms ease-in;
+    -moz-transition: opacity 100ms ease-in;
+    transition: opacity 100ms ease-in;
+
+}
+#perfil:target {
+  pointer-events: auto;
+  opacity: 1;
+}
+div.containerMain{
+  padding-left: 10%!important;
+  padding-right: 10%!important;
+  margin-top: 7%!important;
+}
+div.rowMain > div{
+  display: inline-block;
+}
+.rowMain > div{
+  background: white;
+  padding: 2rem;
+  border-radius: 2px;
+  -webkit-box-shadow: 0 0 4px 0 rgba(0,0,0,.08), 0 2px 4px 0 rgba(0,0,0,.12);
+-moz-box-shadow: 0 0 4px 0 rgba(0,0,0,.08), 0 2px 4px 0 rgba(0,0,0,.12);
+box-shadow: 0 0 4px 0 rgba(0,0,0,.08), 0 2px 4px 0 rgba(0,0,0,.12);
+}
+.boxNot {
+  border-top:1px solid #DEDEDE;
+}
+.colNot{
+width: 79%;
+margin-right: 1%;
+padding-left:1.5rem;
+padding-right: 1.5rem;
+}
+.boxNots{
+  padding-top: 1rem;
+}
+.colPro{
+  width: 20%;
+  overflow: hidden;
+  float: right;
+}
+.colPro{
+  display: flex;
+  flex-flow: column wrap;
+}
+.colPro div{
+  width: 100%;
+}
+.colPro .leftPro img{
+  width: 80%;
+  margin-left:10%;
+  margin-right: 10%;
+}
+.colPro .rightPro {
+  padding-top: 0.5rem;
+  text-align: center;
+}
+.colPro .rightPro button {
+  margin-top: 1rem;
+}
+.colPro .rightPro span{
+  margin-bottom: 0.7rem;
+}
+.colPro .rightPro h4 {
+  margin-bottom: 0.7rem;
+  font-size: 1.4rem;
+}
+.midUser {
+  margin-top: 1rem;
+}
+.topPerfil {
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: center;
+  border-bottom: 1px solid #363f4d;
+}
+.topPerfil div{
+   width: 100%;
+   
+}
+.topUser a{
+ float: right;
+ font-size: 1.5rem;
+ font-weight: bold;
+ margin-right:0.7rem;
+ margin-top:0.2rem;
+ color: white;
+}
+.topUser a:hover {
+  text-decoration: none;
+  color: white;
+}
+.midUser {
+  padding-left: 25%;
+  padding-right: 25%;
+}
+.midUser img{
+  width: 100%;
+}
+.botUser{
+  padding: 1rem;
+}
+.botUser h5{
+  text-align: center;
+}
+.botUser p{
+  text-align: center;
+}
+.bottomPerfil ul{
+  list-style: none;
+  padding-left: 0px;
+}
+.bottomPerfil li{
+  width: 100%;
+  padding: 1rem 1.5rem;
+  display: flex;
+  flex-direction: row;
+  align-content: center flex-start;
+    align-items: center;
+}
+.bottomPerfil li:hover{
+  background-color: #161e2c;
+  border-left: 5px solid #1f618d;
+}
+.bottomPerfil li:hover a{
+    color: #f7f7f7!important;
+    text-decoration: none;
+}
+.bottomPerfil li a{
+   font-size: 1rem;
+   color: #dedede!important;
+   font-family: "Roboto",sans-serif;
+}
+.bottomPerfil li i{
+  font-size: 1.4rem;
+  margin-right: 0.8rem;
+}
+p.clasificacion {
+  position: relative;
+  overflow: hidden;
+  display: inline-block;
+  width: 100%;
+  margin-bottom: 0px;
+}
+
+p.clasificacion input {
+  position: absolute;
+  top: -100px;
+}
+
+p.clasificacion label {
+  float: left;
+  color: #333;
+  font-size: 2rem;
+  margin-bottom: 0.7rem;
+}
+
+p.clasificacion label:hover,
+p.clasificacion label:hover ~ label,
+p.clasificacion input:checked ~ label {
+  color: #dd4;
+}
+.colPro {
+  line-height: 1.3rem;
+  height: auto;
+}
+.boxNots{
+  width: 100%;
+}
+.boxNot{
+  width: 100%;
+  display: flex;
+  flex-flow: row nowrap;
+}
+.boxNot img{
+  width: 100%;
+}
+.leftNot{
+  padding:1rem 0rem;
+}
+.leftNot{
+  width: 8%;
+}
+.rightNot{
+  width: 92%;
+  padding: 1rem;
+}
+.colPro .leftPro button{
+  margin-top: 0.5rem;
+}
+#formAcceso ul li a img{
+    width: 100%!important;
+}
+.acceso li:hover {
+    border:none!important;
+}
+nav form button a{
+    color:white;
+}
+nav div{
+
+}
+nav form button a:hover {
+    color:white;
+    text-decoration: none;
+    opacity: 0.6;
+}
+.acceso li{
+    margin:0px!important;
+    font-size: 12px;
+    text-transform: uppercase;
+}
+.acceso li:nth-child(1) a span{
+    border-right:1px solid white;
+    padding-right: 10px;
+}
+
+.btn{
+   text-transform: uppercase;
+   font-family: "Oswald",sans-serif;
+   background-color: #FF5733;
+    color:white;
+}
+
+.modalDialog {
+    position: fixed;
+    font-family: Arial, Helvetica, sans-serif;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    background: rgba(0,0,0,0.4);
+    z-index: 99999;
+    opacity:0;
+    -webkit-transition: opacity 400ms ease-in;
+    -moz-transition: opacity 400ms ease-in;
+    transition: opacity 400ms ease-in;
+    pointer-events: none;
+}
+.modalDialog:target {
+    opacity:1;
+    pointer-events: auto;
+}
+.modalDialog > div {
+    width: 70%;
+    position: relative;
+    margin: 10% auto;
+    border-radius:0.1rem;
+    background: #fff;
+    padding: 20px;
+  -webkit-transition: opacity 400ms ease-in;
+-moz-transition: opacity 400ms ease-in;
+transition: opacity 400ms ease-in;
+}
+.loginTraba{
+  border-right:1px solid #E8E8E8;
+}
+.loginReg{
+    padding-left: 20px;
+}
+.loginReg p {
+
+}
+.modalDialog .row form .form-group {
+    padding: 0px!important;
+}
+.modalDialog h2 {
+    font-family: "Oswald",sans-serif;
+    text-transform: uppercase;
+}
+.modalDialog .row {
+ text-align: left!important;
+
+}
+.btn:hover a{
+    color:white;
+    text-decoration: none;
+    opacity: 0.6;
+}
+.btn a {
+    color:white;
+}
+.modalDialog .row div {
+    padding-right: 20px;
+    padding-left: 20px;
+}
+.modalDialog form label {
+    text-align: left!important;
+}
+.btnLogin {
+    width: 50%;
+    margin-left: 0.7rem;
+    margin-right: 0px!important;
+}
+.close {
+    color: black;
+    opacity: 0.2;
+    position: absolute;
+    right: 0rem;
+    text-align: center;
+    top: 0.5rem;
+    width:4%;
+    text-decoration: none;
+    font-weight: 700;
+    font-size: 0.8rem!important;
+    font-family: "Verdana";
+}
+.close:hover {
+    color:black;
+    opacity: 0.6;
+}
+
+.withoutB{
+    border:none!important;
+}
+footer {
+    width: 100%;
+    background: #f5f5f5;
+    overflow: hidden;
+    padding-top: 10px;
+}
+footer p{
+    text-align: center;
+    color:#777;
+    font-family: "Oswald",sans-serif;
+    font-size:18px;
+
+}
+.nHeadNot{
+
+  padding: 1rem;
+  border-bottom: 1px solid #DEDEDE;
+}
+.nHeadNot h5{
+  margin-bottom: 0px;
+  font-size: 1.2rem;
+  text-transform: uppercase;
+  font-weight: bold;
+}
+.nBoxNot{
+  width: 100%;
+  display: flex;
+  flex-flow: row wrap;
+  padding: 1rem;
+  border-bottom: 1px solid #DEDEDE;
+}
+.nBoxNot:last-child{
+   border:0px;
+}
+.nBoxNot div{
+  display: flex;
+  align-items: center;
+}
+.nBoxNot h6{
+  margin-bottom: 0px;
+  font-weight: bold;
+}
+.nBoxNot img{
+  width: 100%;
+
+}
+.nFootNot a{
+  margin-bottom: 0.3rem;
+  margin-top: 0.3rem;
+  display: flex;
+  justify-content: center;
+}
+#navNot{
+  background-color:white;
+  overflow: hidden;
+  width: 20%;
+  position: absolute;
+  top:0;
+  right:3.5rem;
+  margin-top: 3.7rem;
+  box-shadow: 0 0 4px 0 rgba(0,0,0,.08), 0 2px 4px 0 rgba(0,0,0,.12);
+  color: #1f2836;
+  border-radius: 5px 5px 0px 0px;
+  display: none;
+  z-index: 9999;
+}
+.show{
+  display:block!important;
+}
+.nleftNot{
+  width: 30%;
+}
+.nrightNot{
+  width: 70%;
+  padding-left: 0.5rem;
+  display: flex;
+  flex-flow: row wrap;
+}
+.nrightNot span{
+  font-size: 0.8rem;
+}
+/*RESPONSIVE DESING===========================================================================================================================
+=============================================================================================================================================*/
+@media(min-width: 320px) {
+ nav{
+    background-color:#1f618d;
+ }
+ .navbar-toggler {
+    border-color: rgb(255,255,255)!important;
+ }
+ .navbar-toggler span {
+  background-image: url("data:image/svg+xml;charset=utf8,%3Csvg viewBox='0 0 32 32' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath stroke='rgba(255,255,255,1)' stroke-width='3' stroke-linecap='round' stroke-miterlimit='10' d='M4 8h24M4 16h24M4 24h24'/%3E%3C/svg%3E")!important;
+ }
+#formAcceso{
+    margin-top:0px!important;
+ }
+ nav a,span{
+    font-size: 12px;
+    text-transform: none;
+ }
+ nav ul li{
+    margin: 10px!important;
+ }
+ #liAcceso{
+    margin-right: 0px!important;
+ }
+#formAcceso ul {
+    margin-right: 0px!important;
+}
+ nav form .acceso li a span{
+    margin: 0px!important;
+    border:none!important;
+ }
+ #acceso{
+    padding:0px!important;
+ }
+ .hide {
+    display: none!important;
+ }
+ .loginReg{
+    display: none;
+ }
+ .loginTraba{
+    display: flex;
+    flex-flow:column wrap; 
+    justify-content: center;
+    max-width: 100%!important;
+    border:none;
+    padding: 0px!important;
+    flex:none!important;
+ }
+ .loginTraba h2{
+    text-align: center;
+ }
+ .loginTraba form a{
+    text-align: center!important;
+    display: flex;
+    justify-content: center;
+ }
+ .loginTraba form button {
+    margin-left: 0px;
+   width: 100%;
+   margin-top:1rem;
+ }
+ #openModal div.row a.close{
+    position: absolute;
+    top:0.5rem;
+    right: 0.5rem;
+
+}
+@media (min-width: 768px) {
+ body{
+ }
+  
+
+}
+@media (min-width: 1024px) {
+    .navbar-expand-lg .navbar-nav .nav-link {
+    padding-right: 0rem!important;
+    padding-left: 0rem!important;
+}
+    nav {
+        padding-left: 5%!important;
+        padding-right: 5%!important;
+    }
+    .hide2{
+        display: none!important;
+    }
+   nav ul li {
+    margin:0px 5px!important;
+   }
+   nav ul li a{
+    font-size: 0.9rem;
+   }
+   .acceso li a span{
+    text-transform: uppercase;
+    font-size: 0.6rem;
+   }
+   .acceso li:nth-child(1) a span{
+    border-right:1px solid white!important;
+    padding-right: 10px!important;
+   }
+   .hide {
+    display: initial!important;
+   }
+   nav form button a{
+       text-transform: uppercase!important;
+   }
+   #liAcceso:nth-child(1){
+    margin-left: 0px!important;
+   }
+   #acceso{
+    padding-right: 10px!important;
+   }
+   .modalDialog > div {
+        width: 50%;
+     }
+     #acceso{
+        padding-left: 10px!important;
+     }
+ }
+@media (min-width: 1200px) {
+
+     nav{
+        padding-left:10%!important;
+        padding-right: 10%!important;
+     }
+     nav ul li{
+        margin: 0px 20px!important;
      }
      nav ul li a{
         font-size: 1rem;

@@ -1,3 +1,4 @@
+
      var template ='<article class="ct-post row">'+
          '<div class="primaryInfoPost col-9">'+
          '<div class="topArticle col-12">'+
@@ -23,11 +24,18 @@
          '</div>'+
          '<div class="row">'+
          '<div class="col-12 boxExtras">'+
-         '<p class="pOfertar"><a href="#">OFERTAR AHORA</a></p>'+
+         '<p class="pOfertar"><a href="post.php?id= <?php echo $id; ?>" onclick="enviarId( :id: )"> OFERTAR AHORA </a></p>'+
          '</div>'+
          '</div>'+
          '</div>'+
      '</article>';
+var id=1;
+function enviarId(id)
+{
+
+var id =id;
+
+}
 
 $(function(){
     /**
@@ -53,8 +61,8 @@ $(function(){
                  .replace(":date:",post.date)
                  .replace(":pay:",post.payment)
                  .replace(":summary:",post.content)
-                 .replace(":user:",post.user);
-
+                 .replace(":user:",post.user)
+                 .replace(":id:",post.id);
                  
                  $postCtn.append($(article));
                 
@@ -77,8 +85,8 @@ $(function(){
                  .replace(":date:",post.date)
                  .replace(":pay:",post.payment)
                  .replace(":summary:",post.content)
-                 .replace(":user:",post.user);
-                 
+                 .replace(":user:",post.user)
+                 .replace(":id:",post.id);
                  $postCtn.append($(article));
                 
             })}).fail(function(data) {

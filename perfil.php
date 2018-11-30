@@ -23,7 +23,7 @@
     <div class="boxProfile">
     	<div class="leftProfile">
     		<div class="boxImgUser">
-    		<img src="img/user.png" alt="">
+    		<img src="data:image/jpg;base64,<?php echo base64_encode($_SESSION['img']);?>"/>
     		</div>
     		<ul>
     			<li><b>EMAIL:</b> <?php echo $_SESSION['origin']?></li>

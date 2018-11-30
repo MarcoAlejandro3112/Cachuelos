@@ -59,7 +59,7 @@
             </div>
           <?php  }?>
      <div class="nFootNot">
-        <a href="#">Ver Todas</a>
+        <a href="dashboard.php">Ver Todas</a>
      </div>     
 </div>
 <div id="perfil">
@@ -85,3 +85,18 @@
   </div>
 </div>
 </div>
+<script>
+    var bell = document.getElementById("bell");
+    var not = document.getElementById("navNot");
+    var toggle = false;
+    bell.addEventListener("click",function(){
+      
+            if(toggle == true){
+              not.className = "";
+              toggle = false;
+            } else {
+              not.className = "show";
+            toggle = true;
+            }
+    });
+  </script>
