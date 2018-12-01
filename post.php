@@ -50,7 +50,7 @@ $con=mysqli_connect("localhost","root","","id7557222_cachuelos");
 	</section>
 	<section class="rightPost">
 		<div class="offertPost">
-			<button class="btn">Ofertar Ahora</button><br/>
+			<button class="btn" onclick="mostrar();">Ofertar Ahora</button><br/>
 			<span><b>Pago:</b> $<?php echo $pos['payment'];?></span><br/>
 			<span><b>N° Postulantes :</b> #</span><br/>
 		</div>
@@ -62,7 +62,28 @@ $con=mysqli_connect("localhost","root","","id7557222_cachuelos");
 			<span><b>N° Trabajos Completados: </b>#</span>
 		</div>
 	</section>
+	
 </div>
+<section class="hide" id="payPost">
+		<form method="post" action="postular.php">
+			<div class="form-group ">
+			<label>¿Cuanto quieres que te paguen?</label>
+		<input class="form-control" type="number" name="money" placeholder="$">
+		</div>
+		<div class="form-group">
+    <label for="content">Describe tu propuesta</label>
+    <textarea class="form-control" id="content" name="content" rows="5"></textarea>
+  </div>
+  <button class="btn " type="submit" >Postular</button>
+		</form>
+		
+	</section>
+	<script type="text/javascript">
+		function mostrar() {
+			var pay = document.getElementById("payPost");
+			pay.className = "payPost";
+		}
+	</script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
 <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous"></script>
 </body>

@@ -1,0 +1,479 @@
+html {
+    box-sizing: border-box!important;
+    margin: 0px!important;
+    padding: 0px!important;
+}
+*,*:after,*:before {
+    box-sizing: inherit!important;
+}
+body {
+    background-color: #EBEDEF!important;
+    font-family: "Roboto",sans-serif!important;
+}
+nav {
+    padding-right:10%!important;
+    padding-left: 10%!important;
+    background-color:#1f618d;
+    transition: .3s;
+    display: flex;
+}
+.naranja{
+    background-color: #FF5733;
+    color:white;
+}
+.amarillo-outline {
+    border:1px solid #FFC300!important;
+    background-color:#FFC300;
+    color:white;
+}
+#formAcceso ul li:nth-child(4){
+  margin-right: 0px!important;
+}
+.navbar-brand {
+    font-family:"Oswald",sans-serif;
+}
+nav .navbar-brand, ul li a {
+    color:white!important;
+}
+nav ul li:hover {
+    opacity: 0.6;
+}
+nav ul li {
+    margin:0px 10px;
+}
+#aImg {
+    width: 10%!important;
+}
+#perfil{
+  width:20%;
+  position: absolute;
+  right: 0;
+  top:0;
+  background:#1f2836;
+  color:white;
+  height: 100vh;
+  z-index: 1100;
+  pointer-events: none;
+  opacity: 0;
+  -webkit-transition: opacity 100ms ease-in;
+    -moz-transition: opacity 100ms ease-in;
+    transition: opacity 100ms ease-in;
+
+}
+#perfil:target {
+  pointer-events: auto;
+  opacity: 1;
+}
+
+.midUser {
+  margin-top: 1rem;
+}
+.topPerfil {
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: center;
+  border-bottom: 1px solid #363f4d;
+}
+.topPerfil div{
+   width: 100%;
+   
+}
+.topUser a{
+ float: right;
+ font-size: 1.5rem;
+ font-weight: bold;
+ margin-right:0.7rem;
+ margin-top:0.2rem;
+ color: white;
+}
+.topUser a:hover {
+  text-decoration: none;
+  color: white;
+}
+.midUser {
+  padding-left: 25%;
+  padding-right: 25%;
+}
+.midUser img{
+  width: 100%;
+}
+.botUser{
+  padding: 1rem;
+}
+.botUser h5{
+  text-align: center;
+}
+.botUser p{
+  text-align: center;
+}
+.bottomPerfil ul{
+  list-style: none;
+  padding-left: 0px;
+}
+.bottomPerfil li{
+  width: 100%;
+  padding: 1rem 1.5rem;
+  display: flex;
+  flex-direction: row;
+  align-content: center flex-start;
+    align-items: center;
+}
+.bottomPerfil li:hover{
+  background-color: #161e2c;
+  border-left: 5px solid #1f618d;
+}
+.bottomPerfil li:hover a{
+    color: #f7f7f7!important;
+    text-decoration: none;
+}
+.bottomPerfil li a{
+   font-size: 1rem;
+   color: #dedede!important;
+   font-family: "Roboto",sans-serif;
+}
+.bottomPerfil li i{
+  font-size: 1.4rem;
+  margin-right: 0.8rem;
+}
+
+#formAcceso ul li a img{
+    width: 100%!important;
+}
+.acceso li:hover {
+    border:none!important;
+}
+nav form button a{
+    color:white;
+}
+
+nav form button a:hover {
+    color:white;
+    text-decoration: none;
+    opacity: 0.6;
+}
+.acceso li{
+    margin:0px!important;
+    font-size: 12px;
+    text-transform: uppercase;
+}
+.acceso li:nth-child(1) a span{
+    border-right:1px solid white;
+    padding-right: 10px;
+}
+
+.btn{
+   text-transform: uppercase;
+   font-family: "Oswald",sans-serif;
+   background-color: #FF5733;
+    color:white;
+}
+
+.nHeadNot{
+
+  padding: 1rem;
+  border-bottom: 1px solid #DEDEDE;
+}
+.nHeadNot h5{
+  margin-bottom: 0px;
+  font-size: 1.2rem;
+  text-transform: uppercase;
+  font-weight: bold;
+}
+.nBoxNot{
+  width: 100%;
+  display: flex;
+  flex-flow: row wrap;
+  padding: 1rem;
+  border-bottom: 1px solid #DEDEDE;
+}
+.nBoxNot:last-child{
+   border:0px;
+}
+.nBoxNot div{
+  display: flex;
+  align-items: center;
+}
+.nBoxNot h6{
+  margin-bottom: 0px;
+  font-weight: bold;
+}
+.nBoxNot img{
+  width: 100%;
+
+}
+.nFootNot a{
+  margin-bottom: 0.3rem;
+  margin-top: 0.3rem;
+  display: flex;
+  justify-content: center;
+}
+#navNot{
+  background-color:white;
+  overflow: hidden;
+  width: 20%;
+  position: absolute;
+  top:0;
+  right:3.5rem;
+  margin-top: 3.7rem;
+  box-shadow: 0 0 4px 0 rgba(0,0,0,.08), 0 2px 4px 0 rgba(0,0,0,.12);
+  color: #1f2836;
+  border-radius: 5px 5px 0px 0px;
+  display: none;
+}
+.show{
+  display:block!important;
+}
+.nleftNot{
+  width: 30%;
+}
+.nrightNot{
+  width: 70%;
+  padding-left: 0.5rem;
+  display: flex;
+  flex-flow: row wrap;
+}
+.nrightNot span{
+  font-size: 0.8rem;
+}
+.containerPost{
+  margin-left: 10%;
+  margin-right: 10%;
+  background-color: #fff;
+  box-shadow: 0 1px 6px rgba(57,73,76,.35);
+  margin-top: 7%;
+  margin-bottom:3%;
+  display: flex;
+  flex-flow: row nowrap;
+}
+.payPost{
+   margin-left: 10%;
+  margin-right: 10%;
+  background-color: #fff;
+  box-shadow: 0 1px 6px rgba(57,73,76,.35);
+  display: flex;
+  flex-flow: row nowrap;
+  margin-bottom: 3%;
+  padding: 1rem;
+
+}
+section.hide{
+  display: none!important;
+
+}
+.payPost form {
+  width: 100%;
+}
+.containerPost section.leftPost{
+  width: 70%;
+  display: flex;
+  flex-flow: column wrap;
+  align-items: center;
+}
+.containerPost section.leftPost div {
+ width: 100%;
+ padding: 2rem;
+border-bottom: 1px solid #E0E0E0;
+}
+.containerPost section.leftPost div:last-child {
+
+border-bottom: none;
+}
+.containerPost section.leftPost .titlePost {
+  background-color: #F9F9F9;
+  color:#222;
+}
+.containerPost section.leftPost .titlePost h1{
+  font-size: 2rem;
+  text-transform: uppercase;
+  font-family: "Oswald",sans-serif;
+ 
+}
+.containerPost section.leftPost .data {
+  padding:0rem 2rem;
+}
+.tagsPost{
+  border-bottom: 1px solid #E0E0E0;
+}
+.containerPost section.leftPost .tagsPost span{
+    color: #656565 ;
+}
+.containerPost section.leftPost .tagsPost p{
+    color: #222;
+}
+.containerPost section.rightPost{
+  width: 30%;
+  display: flex;
+  flex-flow: column wrap;
+  background-color: #F2F2F2;
+      border-left: 1px solid #e0e0e0;
+}
+.containerPost section.rightPost div{
+  width: 100%;
+  padding:2.2rem 3rem;
+}
+.rightPost button {
+  width: 100%;
+}
+.offertPost {
+  display: flex;
+  flex-flow: row wrap;
+  border-bottom:1px solid #e0e0e0; 
+}
+.rightPost .offertPost span{
+  font-size: 1rem;
+  width: 100%;
+  margin-top: 0.9rem;
+}
+.clientPost {
+  display: flex;
+  flex-flow: row wrap;
+}
+.clientPost h4{
+  font-size: 1.3rem;
+  text-transform: uppercase;
+  font-family: "Oswald",sans-serif;
+  margin-bottom: 1rem;
+}
+.clientPost span {
+  margin-bottom: 0.7rem;
+}
+/*RESPONSIVE DESING===========================================================================================================================
+=============================================================================================================================================*/
+@media(min-width: 320px) {
+ nav{
+    background-color:#1f618d;
+ }
+ .navbar-toggler {
+    border-color: rgb(255,255,255)!important;
+ }
+ .navbar-toggler span {
+  background-image: url("data:image/svg+xml;charset=utf8,%3Csvg viewBox='0 0 32 32' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath stroke='rgba(255,255,255,1)' stroke-width='3' stroke-linecap='round' stroke-miterlimit='10' d='M4 8h24M4 16h24M4 24h24'/%3E%3C/svg%3E")!important;
+ }
+#formAcceso{
+    margin-top:0px!important;
+ }
+ nav a,span{
+    font-size: 12px;
+    text-transform: none;
+ }
+ nav ul li{
+    margin: 10px!important;
+ }
+ #liAcceso{
+    margin-right: 0px!important;
+ }
+#formAcceso ul {
+    margin-right: 0px!important;
+}
+ nav form .acceso li a span{
+    margin: 0px!important;
+    border:none!important;
+ }
+ #acceso{
+    padding:0px!important;
+ }
+ .hide {
+    display: none!important;
+ }
+ .loginReg{
+    display: none;
+ }
+ .loginTraba{
+    display: flex;
+    flex-flow:column wrap; 
+    justify-content: center;
+    max-width: 100%!important;
+    border:none;
+    padding: 0px!important;
+    flex:none!important;
+ }
+ .loginTraba h2{
+    text-align: center;
+ }
+ .loginTraba form a{
+    text-align: center!important;
+    display: flex;
+    justify-content: center;
+ }
+ .loginTraba form button {
+    margin-left: 0px;
+   width: 100%;
+   margin-top:1rem;
+ }
+ #openModal div.row a.close{
+    position: absolute;
+    top:0.5rem;
+    right: 0.5rem;
+
+}
+@media (min-width: 768px) {
+ body{
+ }
+  
+
+}
+@media (min-width: 1024px) {
+    .navbar-expand-lg .navbar-nav .nav-link {
+    padding-right: 0rem!important;
+    padding-left: 0rem!important;
+}
+    nav {
+        padding-left: 5%!important;
+        padding-right: 5%!important;
+    }
+    .hide2{
+        display: none!important;
+    }
+   nav ul li {
+    margin:0px 5px!important;
+   }
+   nav ul li a{
+    font-size: 0.9rem;
+   }
+   .acceso li a span{
+    text-transform: uppercase;
+    font-size: 0.6rem;
+   }
+   .acceso li:nth-child(1) a span{
+    border-right:1px solid white!important;
+    padding-right: 10px!important;
+   }
+   .hide {
+    display: initial!important;
+   }
+   nav form button a{
+       text-transform: uppercase!important;
+   }
+   #liAcceso:nth-child(1){
+    margin-left: 0px!important;
+   }
+   #acceso{
+    padding-right: 10px!important;
+   }
+   .modalDialog > div {
+        width: 50%;
+     }
+     #acceso{
+        padding-left: 10px!important;
+     }
+ }
+@media (min-width: 1200px) {
+
+     nav{
+        padding-left:10%!important;
+        padding-right: 10%!important;
+     }
+     nav ul li{
+        margin: 0px 20px!important;
+     }
+     nav ul li a{
+        font-size: 1rem;
+     }
+     .acceso li a span{
+        font-size:0.8rem;
+     }
+     nav a,span {
+        font-size: 1rem;
+     }
+     
+ }
