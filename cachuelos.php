@@ -31,8 +31,8 @@
    
   <div id="app-container">
     <?php 
-    $varsession = $_SESSION['origin'];
-    if($varsession == null || $varsession = ''){
+    
+    if(isset($_SESSION)){
       include("headerSolid.php"); 
     } else {
         include("headerDash.php");
