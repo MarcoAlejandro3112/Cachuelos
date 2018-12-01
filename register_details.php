@@ -18,21 +18,21 @@ if(isset($_FILES)  &&  isset($_REQUEST['name']) && !empty($_REQUEST['name']) && 
             session_unset();
             session_destroy();
             echo "Exito!";
-            if(!is_uploaded_file(addslashes(file_get_contents($_FILES['uploadedfile']['tmp_name'])))){
+            /*if(!is_uploaded_file(addslashes(file_get_contents($_FILES['uploadedfile']['tmp_name'])))){
 
                 echo "Error al procesar la imagen";
                     exit();
-            }
+            }*/
 
              $target_path = "img/";
         $target_path = $target_path . addslashes(file_get_contents($_FILES['uploadedfile']['tmp_name']));
             echo "string";
-            
+            header("Location:index.php#openModal2");
 
            
 
         if(move_uploaded_file(addslashes(file_get_contents($_FILES['uploadedfile']['tmp_name'])), $target_path)) {
-         echo "El archivo ". basename( $_FILES['uploadedfile']['name']). " ha sido subido"; header("Location:index.php#openModal2");
+         echo "El archivo ". basename( $_FILES['uploadedfile']['name']). " ha sido subido"; 
         } else{
         echo "Ha ocurrido un error, trate de nuevo!";
         }
