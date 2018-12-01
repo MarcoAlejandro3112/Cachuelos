@@ -32,7 +32,6 @@ nav {
 .navbar-brand {
     font-family:"Oswald",sans-serif;
 }
-
 nav .navbar-brand, ul li a {
     color:white!important;
 }
@@ -65,65 +64,7 @@ nav ul li {
   pointer-events: auto;
   opacity: 1;
 }
-div.containerMain{
-  padding-left: 10%!important;
-  padding-right: 10%!important;
-  margin-top: 7%!important;
-}
-div.rowMain > div{
-  display: inline-block;
-}
-.rowMain > div{
-  background: white;
-  padding: 2rem;
-  border-radius: 2px;
-  -webkit-box-shadow: 0 0 4px 0 rgba(0,0,0,.08), 0 2px 4px 0 rgba(0,0,0,.12);
--moz-box-shadow: 0 0 4px 0 rgba(0,0,0,.08), 0 2px 4px 0 rgba(0,0,0,.12);
-box-shadow: 0 0 4px 0 rgba(0,0,0,.08), 0 2px 4px 0 rgba(0,0,0,.12);
-}
-.boxNot {
-  border-top:1px solid #DEDEDE;
-}
-.colNot{
-width: 79%;
-margin-right: 1%;
-padding-left:1.5rem;
-padding-right: 1.5rem;
-}
-.boxNots{
-  padding-top: 1rem;
-}
-.colPro{
-  width: 20%;
-  overflow: hidden;
-  float: right;
-}
-.colPro{
-  display: flex;
-  flex-flow: column wrap;
-}
-.colPro div{
-  width: 100%;
-}
-.colPro .leftPro img{
-  width: 80%;
-  margin-left:10%;
-  margin-right: 10%;
-}
-.colPro .rightPro {
-  padding-top: 0.5rem;
-  text-align: center;
-}
-.colPro .rightPro button {
-  margin-top: 1rem;
-}
-.colPro .rightPro span{
-  margin-bottom: 0.7rem;
-}
-.colPro .rightPro h4 {
-  margin-bottom: 0.7rem;
-  font-size: 1.4rem;
-}
+
 .midUser {
   margin-top: 1rem;
 }
@@ -194,59 +135,7 @@ padding-right: 1.5rem;
   font-size: 1.4rem;
   margin-right: 0.8rem;
 }
-p.clasificacion {
-  position: relative;
-  overflow: hidden;
-  display: inline-block;
-  width: 100%;
-  margin-bottom: 0px;
-}
 
-p.clasificacion input {
-  position: absolute;
-  top: -100px;
-}
-
-p.clasificacion label {
-  float: left;
-  color: #333;
-  font-size: 2rem;
-  margin-bottom: 0.7rem;
-}
-
-p.clasificacion label:hover,
-p.clasificacion label:hover ~ label,
-p.clasificacion input:checked ~ label {
-  color: #dd4;
-}
-.colPro {
-  line-height: 1.3rem;
-  height: auto;
-}
-.boxNots{
-  width: 100%;
-}
-.boxNot{
-  width: 100%;
-  display: flex;
-  flex-flow: row nowrap;
-}
-.boxNot img{
-  width: 100%;
-}
-.leftNot{
-  padding:1rem 0rem;
-}
-.leftNot{
-  width: 8%;
-}
-.rightNot{
-  width: 92%;
-  padding: 1rem;
-}
-.colPro .leftPro button{
-  margin-top: 0.5rem;
-}
 #formAcceso ul li a img{
     width: 100%!important;
 }
@@ -256,9 +145,7 @@ p.clasificacion input:checked ~ label {
 nav form button a{
     color:white;
 }
-nav div{
 
-}
 nav form button a:hover {
     color:white;
     text-decoration: none;
@@ -281,110 +168,6 @@ nav form button a:hover {
     color:white;
 }
 
-.modalDialog {
-    position: fixed;
-    font-family: Arial, Helvetica, sans-serif;
-    top: 0;
-    right: 0;
-    bottom: 0;
-    left: 0;
-    background: rgba(0,0,0,0.4);
-    z-index: 99999;
-    opacity:0;
-    -webkit-transition: opacity 400ms ease-in;
-    -moz-transition: opacity 400ms ease-in;
-    transition: opacity 400ms ease-in;
-    pointer-events: none;
-}
-.modalDialog:target {
-    opacity:1;
-    pointer-events: auto;
-}
-.modalDialog > div {
-    width: 70%;
-    position: relative;
-    margin: 10% auto;
-    border-radius:0.1rem;
-    background: #fff;
-    padding: 20px;
-  -webkit-transition: opacity 400ms ease-in;
--moz-transition: opacity 400ms ease-in;
-transition: opacity 400ms ease-in;
-}
-.loginTraba{
-  border-right:1px solid #E8E8E8;
-}
-.loginReg{
-    padding-left: 20px;
-}
-.loginReg p {
-
-}
-.modalDialog .row form .form-group {
-    padding: 0px!important;
-}
-.modalDialog h2 {
-    font-family: "Oswald",sans-serif;
-    text-transform: uppercase;
-}
-.modalDialog .row {
- text-align: left!important;
-
-}
-.btn:hover a{
-    color:white;
-    text-decoration: none;
-    opacity: 0.6;
-}
-.btn a {
-    color:white;
-}
-.modalDialog .row div {
-    padding-right: 20px;
-    padding-left: 20px;
-}
-.modalDialog form label {
-    text-align: left!important;
-}
-.btnLogin {
-    width: 50%;
-    margin-left: 0.7rem;
-    margin-right: 0px!important;
-}
-.close {
-    color: black;
-    opacity: 0.2;
-    position: absolute;
-    right: 0rem;
-    text-align: center;
-    top: 0.5rem;
-    width:4%;
-    text-decoration: none;
-    font-weight: 700;
-    font-size: 0.8rem!important;
-    font-family: "Verdana";
-}
-.close:hover {
-    color:black;
-    opacity: 0.6;
-}
-
-.withoutB{
-    border:none!important;
-}
-footer {
-    width: 100%;
-    background: #f5f5f5;
-    overflow: hidden;
-    padding-top: 10px;
-}
-footer p{
-    text-align: center;
-    color:#777;
-    font-family: "Oswald",sans-serif;
-    font-size:18px;
-
-}
 .nHeadNot{
 
   padding: 1rem;
@@ -451,6 +234,89 @@ footer p{
 }
 .nrightNot span{
   font-size: 0.8rem;
+}
+.containerPost{
+  margin-left: 10%;
+  margin-right: 10%;
+  background-color: #fff;
+  box-shadow: 0 1px 6px rgba(57,73,76,.35);
+  margin-top: 7%;
+  display: flex;
+  flex-flow: row nowrap;
+}
+.containerPost section.leftPost{
+  width: 70%;
+  display: flex;
+  flex-flow: column wrap;
+  align-items: center;
+}
+.containerPost section.leftPost div {
+ width: 100%;
+ padding: 2rem;
+border-bottom: 1px solid #E0E0E0;
+}
+.containerPost section.leftPost div:last-child {
+
+border-bottom: none;
+}
+.containerPost section.leftPost .titlePost {
+  background-color: #F9F9F9;
+  color:#222;
+}
+.containerPost section.leftPost .titlePost h1{
+  font-size: 2rem;
+  text-transform: uppercase;
+  font-family: "Oswald",sans-serif;
+ 
+}
+.containerPost section.leftPost .data {
+  padding:0rem 2rem;
+}
+.tagsPost{
+  border-bottom: 1px solid #E0E0E0;
+}
+.containerPost section.leftPost .tagsPost span{
+    color: #656565 ;
+}
+.containerPost section.leftPost .tagsPost p{
+    color: #222;
+}
+.containerPost section.rightPost{
+  width: 30%;
+  display: flex;
+  flex-flow: column wrap;
+  background-color: #F2F2F2;
+      border-left: 1px solid #e0e0e0;
+}
+.containerPost section.rightPost div{
+  width: 100%;
+  padding:2.2rem 3rem;
+}
+.rightPost button {
+  width: 100%;
+}
+.offertPost {
+  display: flex;
+  flex-flow: row wrap;
+  border-bottom:1px solid #e0e0e0; 
+}
+.rightPost .offertPost span{
+  font-size: 1rem;
+  width: 100%;
+  margin-top: 0.9rem;
+}
+.clientPost {
+  display: flex;
+  flex-flow: row wrap;
+}
+.clientPost h4{
+  font-size: 1.3rem;
+  text-transform: uppercase;
+  font-family: "Oswald",sans-serif;
+  margin-bottom: 1rem;
+}
+.clientPost span {
+  margin-bottom: 0.7rem;
 }
 /*RESPONSIVE DESING===========================================================================================================================
 =============================================================================================================================================*/

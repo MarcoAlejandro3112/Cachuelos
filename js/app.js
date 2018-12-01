@@ -24,18 +24,12 @@
          '</div>'+
          '<div class="row">'+
          '<div class="col-12 boxExtras">'+
-         '<p class="pOfertar"><a href="post.php?id= <?php echo $id; ?>" onclick="enviarId( :id: )"> OFERTAR AHORA </a></p>'+
+         '<p class="pOfertar"><a href="post.php?id=:id:"> OFERTAR AHORA </a></p>'+
          '</div>'+
          '</div>'+
          '</div>'+
      '</article>';
-var id=1;
-function enviarId(id)
-{
 
-var id =id;
-
-}
 
 $(function(){
     /**
